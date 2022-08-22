@@ -1,0 +1,152 @@
+.our-offices{
+    padding: 8rem 0 9.5rem;
+    background-color: $color-tertiary;
+
+    @include respond (tab-land){
+        padding: 4rem 0 5rem;
+    }
+
+    &__title {
+        margin-bottom: 2.4rem;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 6rem;
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &--central {
+            padding: 0 5%;
+            margin: 0 1rem;
+            &::after{
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 3;
+                background: linear-gradient(to bottom right,
+                #dadbdd00,
+                #dadbdd80,
+                #dadbdd,
+                #dadbdd80,
+                #dadbdd00);
+            }
+    
+            &::before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 100%;
+                right: 0;
+                top: 0;
+                z-index: 3;
+                background: linear-gradient(to bottom right, 
+                #dadbdd00,
+                #dadbdd80,
+                #dadbdd,
+                #dadbdd80,
+                #dadbdd00);
+            }
+        }
+    }
+
+    &__inner-title{
+        font-size: 2.8rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__address{
+        font-style: inherit;
+        font-size: $default-size-text;
+        display: block;
+    }
+
+    &__map-link{
+        text-decoration: underline;
+        font-size: $default-size-text;
+        color: $color-text-tertiary;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+
+    &__info {
+        font-size: $default-size-text;
+        color: $color-text-fourth;
+        margin-bottom: 4px;
+
+        a {
+            font-size: inherit;
+            color: $color-text-primary;
+            margin-left: 4px;
+        }
+
+        span {
+            color: $color-text-primary;
+            margin-left: 4px;
+        }
+    }
+
+    &__social {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
+    &__social-links {
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            padding: 0 1.2rem;
+            color: $color-text-fourth;
+            transition: color .2s ease-in-out;
+
+            &.whatsapp:hover,
+            &.whatsapp:focus {
+                color: #43d854;
+            }
+
+            &.messenger:hover,
+            &.messenger:focus {
+                color: #0695FF;
+            }
+
+            &.facebook:hover,
+            &.facebook:focus {
+                color: #3b5998;
+            }
+
+            &.twitter:hover,
+            &.twitter:focus {
+                color: #1faee9;
+            }
+
+            &.youtube:hover,
+            &.youtube:focus {
+                color: #c4302b;
+            }
+
+            svg {
+                fill: currentColor;
+                width: 3.2rem;
+                height: 3.2rem;
+                display: block;
+            }
+
+        }
+    }
+}

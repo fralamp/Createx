@@ -1,0 +1,139 @@
+.footer {
+    background-color: $color-fourth;
+    padding: 8rem 0;
+
+    @include respond (tab-land){
+        padding: 4rem 0;
+    }
+
+    &__container {
+        max-width: 123rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    &__top{
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__inner-container{
+        max-width: 50rem;
+        margin-right: 1.5rem;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.4rem;
+
+        & .logo-box {
+            margin-right: 6rem;
+        }
+    }
+
+    &__social-link {
+        color: #ffffff99;
+        transition: all .5s;
+
+        &:hover svg,
+        &:focus svg {
+            fill: $color-secondary;
+        }
+
+        &:not(:last-child) {
+            margin-right: 1.6rem;
+        }
+    }
+
+    &__social-icon {
+        fill: currentColor;
+        width: 2.4rem;
+        height: 2.4rem;
+
+        
+    }
+
+    &__text {
+        color: #ffffff99;
+        text-align-last: left;
+        font-size: 1.4rem;
+    }
+
+    &__middle {
+        display: flex;
+        margin-bottom: 6rem;
+
+        & a {
+            transition: all .5s;
+        }
+
+        & a:hover,
+        & a:focus {
+            color: $color-text-tertiary;
+        }
+    }
+
+    &__inner-title{
+        font-size: $default-size-text;
+        color: $color-text-secondary;
+        letter-spacing: 1px;
+        margin-bottom: 1.3rem;
+    }
+
+    &__contacts{
+        display: flex;
+        color: #FFFFFF;
+        font-size: 1.6rem;
+
+        & span {
+            margin-right: 4px;
+        }
+
+        & a {
+            color: $color-text-footer;
+           
+        }
+
+        & address {
+            color: $color-text-footer;
+            font-style: normal;
+        }
+    }
+
+    &__nav--first {
+        margin: 0 12.5rem;
+
+    }
+
+    &__link{
+        font-size: $default-size-text;
+        color: $color-text-footer;
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__reserved {
+        display: flex;
+        align-items: center;
+        color: $color-text-secondary;
+        font-size: 1.2rem;
+
+        & svg {
+            fill: $color-secondary;
+            height: 1.4rem;
+            width: 1.4rem;
+        }
+    }
+
+    &__anchor {
+        color: $color-text-secondary;
+        font-size: 1.4rem;
+    }
+
+}

@@ -1,0 +1,127 @@
+.our-team {
+    max-width: 126rem;
+    margin: 0 auto 12rem;
+
+    @include respond (tab-land){
+        margin: 0 auto 6rem;
+    }
+
+    &__title {
+        margin-bottom: 2.4rem;
+    }
+
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 6rem;
+        font-size: 1.8rem;
+    }
+
+    &__cards {
+        display: grid;
+        margin-bottom: 8rem;
+        grid-column-gap: 3rem;
+        grid-row-gap: 6rem;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(28.5rem, 1fr));
+
+        @include respond (tab-land){
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__card {
+        border-radius: 4px;
+        max-width: 28.5rem;
+
+        &:hover .our-team__social,
+        &:focus .our-team__social {
+            display: flex;
+
+        }
+    }
+
+    &__card-top {
+        position: relative;
+    }
+
+    &__card-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &__social {
+        position: absolute;
+        display: none;
+        background-color: rgba(255, 90, 48, .7);
+        justify-content: center;
+        left: 0;
+        bottom: 0;
+        padding: 2rem 0;
+        width: 100%;
+        z-index: 3;
+        transition: display .3s linear;
+    }
+
+    &__link {
+        margin-left: .6rem;
+        margin-right: 0.6rem;
+
+        svg {
+            fill: $color-primary;
+            width: 2rem;
+            height: 2rem;
+            display: block;
+        }
+    }
+
+    &__text {
+        padding-top: 1.6rem;
+        text-align: center;
+        span {
+            display: block;
+
+            &:first-child {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 4px;
+                color: #424551;
+            }
+
+            &:last-child {
+                font-size: $default-size-text;
+                line-height: 1.6;
+                color: $color-text-fourth;
+            }
+        }
+    }
+
+    &__position {
+        text-align: center;
+        font-size: 1.8rem;
+        color: $color-text-primary;
+
+        a {
+            text-decoration: underline;
+            color: $color-text-tertiary;
+        }
+    }
+
+    &__map {
+        padding: 8rem 0 12rem;
+        background-color: #F4F5F7;
+
+        @include respond (tab-land){
+            padding: 4rem 0 6rem;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}

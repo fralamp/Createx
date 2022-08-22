@@ -1,0 +1,336 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./css/sass/main.scss')
+  title INTERIOR DESIGN
+body
+  include ./partion/header
+  main.main
+    section.section-more-services
+        .more-services
+            .container
+                ul.breadcrumbs
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="index.pug") 
+                            |Homepage
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="services.pug") 
+                            |Services
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="more-service.pug") 
+                            |Interior Design
+                h1.more-services__title
+                    |INTERIOR DESIGN
+                p.more-services__subtitle
+                    |Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet.
+        article.container
+            .more-services__content
+                img.more-services__top-img(src='../img/more-services/more-services-1.jpg' alt='We offer')
+                .more-services__text
+                  h2.more-services__inner-title
+                    |We offer                  
+                  .accordion 
+                    .accordion__item.accordion__item--active
+                      .accordion__content 
+                        img.accordion__plus-img(src='../img/svg/plus.svg' alt='plus icon')
+                        img.accordion__minus-img(src='../img/svg/minus.svg' alt='minus icon')
+                        h4.accordion__title
+                          |Interior design of apartments
+                      .accordion__inner-text
+                        p
+                          |Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis. 
+                    .accordion__item
+                      .accordion__content
+                        img.accordion__plus-img(src='../img/svg/plus.svg' alt='plus icon')
+                        img.accordion__minus-img(src='../img/svg/minus.svg' alt='minus icon')
+                        h4.accordion__title
+                          |Interior design of private houses
+                      .accordion__inner-text
+                        p
+                          |Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis. 
+
+        article.container 
+          h2.more-services__inner-title-2
+                        |That&rsquo;s how we&nbsp;do&nbsp;it
+          .more-services__plan 
+            .more-services__plan-card 
+              h2.more-services__plan-num 
+                |01
+              span.more-services__plan-stage
+                |Work Estimate
+              span.more-services__plan-text
+                |Culpa nostrud commodo ea consequat aliquip reprehenderit.
+            .more-services__plan-card 
+              h2.more-services__plan-num 
+                |02
+              span.more-services__plan-stage
+                |Contract
+              span.more-services__plan-text
+                |Laoreet ultrices curabitur luctus quisque consequat. Leo lorem velit imperdiet auctor et tempor.
+            .more-services__plan-card 
+              h2.more-services__plan-num 
+                |03
+              span.more-services__plan-stage
+                |Mobilization 
+              span.more-services__plan-text
+                |Odio massa scelerisque purus arcu sed velit eleifend cursus leo.
+            .more-services__plan-card 
+              h2.more-services__plan-num 
+                |04
+              span.more-services__plan-stage
+                |Construction Work
+              span.more-services__plan-text
+                |Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.
+        article.more-services__inner-content
+          .our-values.our-values--services  
+            h2.our-values__title.our-values__title--services
+              | Our benefits
+            p.our-values__subtitle
+              | Our mission is&nbsp;to&nbsp;set the highest standards for construction sphere.
+            .our-values__cards
+              .our-values__card
+                img(src='../img/svg/benefits/fixed-terms.svg' alt='fixed terms icon')
+                span.our-values__inner-title.our-values__inner-title--services
+                  | Fixed Terms & Cost
+                p.our-values__inner-subtitle
+                  | Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+              .our-values__card.our-values__card--central
+                img(src='../img/svg/benefits/qualifid.svg' alt='Qualified Workers icon')
+                span.our-values__inner-title.our-values__inner-title--services
+                  | Safety
+                p.our-values__inner-subtitle
+                  | Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
+              .our-values__card
+                img(src='../img/svg/benefits/control.svg' alt='Supervision Control icon')
+                span.our-values__inner-title.our-values__inner-title--services
+                  | Supervision &amp;&nbsp;Control
+                p.our-values__inner-subtitle
+                  | Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.
+            a.btn-link.btn-link--more-services(href='#')
+              | Discuss a project
+        article.project.project--mb-10
+          .project__container
+            h2.project__title
+              | Related projects
+            button.arrow.arrow--project(href='#')
+                svg.arrow__pic
+                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')                  
+            button.arrow.arrow--project(href='#')
+                svg.arrow__pic
+                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')                  
+          // container end
+          .cards
+            .card
+              img.card__img(src='../img/more-services/more-services-2.jpg' alt='photo Apartments & flats')
+              a.card__text(href="more-works.pug") 
+                span.card__name-project
+                  | Kids Bedroom With Decorations
+                span.card__type-project
+                  | Apartments &amp;&nbsp;flats
+              .card__text--invisible
+                span.card__name-project
+                  | Kids Bedroom With Decorations
+                span.card__type-project
+                  | Apartments &amp;&nbsp;flats
+                a.btn-link.btn-link--project(href='more-works.pug')
+                  | View Project
+            .card
+              img.card__img(src='../img/more-services/more-services-3.jpg' alt='photo Apartments & flats')
+              a.card__text(href="more-works.pug") 
+                span.card__name-project
+                  | Modern Double Bedroom
+                span.card__type-project
+                  | Apartments &amp;&nbsp;flats
+              .card__text--invisible
+                span.card__name-project
+                  | Modern Double Bedroom
+                span.card__type-project
+                  | Apartments &amp;&nbsp;flats
+                a.btn-link.btn-link--project(href='more-works.pug')
+                  | View Project
+            .card
+              img.card__img(src='../img/more-services/more-services-4.jpg' alt='photo Private houses')
+              a.card__text(href="more-works.pug") 
+                span.card__name-project
+                  | Scandinavian Style Interior
+                span.card__type-project
+                  | Private houses
+              .card__text--invisible
+                span.card__name-project
+                  | Scandinavian Style Interior
+                span.card__type-project
+                  | Private houses
+                a.btn-link.btn-link--project(href='more-works.pug')
+                  | View Project      
+          .more-inf
+            p.more-inf__text
+              | Explore all our works
+            a.btn-link(href='work.pug')
+              | View portfolio    
+        article.pricing
+          .container 
+            h2.our-values__title
+              | Pricing
+            p.our-values__subtitle
+              | We offer you three categories of construction.
+            table.pricing__table 
+              thead
+                tr
+                  th 
+                  th.pricing__title
+                    |BASIC
+                  th.pricing__title 
+                    |STANDARD
+                  th.pricing__title 
+                    |BUSINESS
+                tr
+                  th.pricing__inner-title-2
+                    |Items
+                  th.pricing__inner-title  
+                    |$20 per&nbsp;m2
+                  th.pricing__inner-title 
+                    |$30 per&nbsp;m2
+                  th.pricing__inner-title 
+                    |$40 per&nbsp;m2
+              tbody 
+                tr
+                  td.pricing__inner-row
+                    |Installation plan
+                  td 
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                tr
+                  td.pricing__inner-row
+                    |Planning solutions (2-3&nbsp;options)
+                  td 
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                tr
+                  td.pricing__inner-row
+                    |Lighting plan
+                  td 
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                tr
+                  td.pricing__inner-row
+                    |Flooring plan
+                  td 
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                tr
+                  td.pricing__inner-row
+                    |Heating floor laying scheme
+                  td 
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                tr
+                  td.pricing__inner-row
+                    |Air conditioner zones layout
+                  td 
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                tr
+                  td.pricing__inner-row
+                    |3D&nbsp;visualization of&nbsp;all rooms
+                  td.pricing__inner-row
+                    |simplified
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                tr
+                  td.pricing__inner-row
+                    |Visualization of&nbsp;each room (3-4&nbsp;angles)
+                  td
+                  td
+                  td
+                    img(src='../img/svg/check.svg' alt='check icon')
+                tr
+                  td.pricing__inner-row
+                    |3D&nbsp;visualization of&nbsp;all rooms
+                  td.pricing__inner-row
+                    |10&nbsp;days
+                  td.pricing__inner-row
+                    |20&nbsp;days
+                  td.pricing__inner-row
+                    |30&nbsp;days
+                tr.pricing__footer-table
+                  th 
+                  th 
+                    a.btn-link.btn-link--transparent(href='more-service.pug')
+                      | send request
+                  th 
+                    a.btn-link.btn-link--transparent(href='more-service.pug')
+                      | send request
+                  th 
+                    a.btn-link.btn-link--transparent(href='more-service.pug')
+                      | send request
+          article.supported
+            h2.supported__title
+              | Supported by 12+ partners
+            .supported__container.supported__container--pricing
+              .supported__block-partner
+                a.supported__link-partner(href='#')
+                  img.supported__img-partner(src='../img/brands/brand-1.png' alt='icon partners')
+                a.supported__link-partner(href='#')
+                  img.supported__img-partner(src='../img/brands/brand-2.png' alt='icon partners')
+                a.supported__link-partner(href='#')
+                  img.supported__img-partner(src='../img//brands/brand-3.png' alt='icon partners')
+              .supported__block-partner                  
+                a.supported__link-partner(href='#')
+                  img.supported__img-partner(src='../img/brands/brand-4.png' alt='icon partners')
+                a.supported__link-partner(href='#')
+                  img.supported__img-partner(src='../img/brands/brand-5.png' alt='icon partners')
+                a.supported__link-partner(href='#')
+                  img.supported__img-partner(src='../img/brands/brand-6.png' alt='icon partners')
+
+    article.article-global-form
+      .container
+        .content.content--form
+          form#global-form.form-global(action='#' method='post' name='form-global')
+            h3.form-global__title
+              | A quick way to discuss details
+            label.form-global__label(for='name')
+              | Name*
+              input.form-global__input(type='text' name='name' placeholder='Your name' required='')
+            label.form-global__label(for='telephone')
+              | Phone*
+              input.form-global__input(type='tel' name='telephone' placeholder='Your phone number' required='')
+            label.form-global__label(for='email')
+              | Email
+              input.form-global__input(type='email' name='email' placeholder='Your working email')
+            label.form-global__label(for='email')
+              | Message*
+              input.form-global__input(type='text' name='Message' placeholder='Your message' required='')
+            .form-global__block-agreement
+              input#checkbox-inf.form-global__checkbox(type='checkbox' required='')
+              label.form-global__label.form-global__label--checkbox(for='checkbox-inf')
+                | I agree to receive communications from Createx Construction Bureau.
+            button.form-global__btn(type='submit' form='global-form')
+              | send request
+  include ./partion/footer
+  script(src="js/accordion.js"  defer="defer")

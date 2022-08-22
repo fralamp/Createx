@@ -1,0 +1,122 @@
+.section-news-page {
+    padding: 15.2rem 0 24rem;
+    background: linear-gradient(#F4F5F6 0%, rgba(244, 245, 246, 0.86) 11.48%, rgba(244, 245, 246, 0) 41.15%), url(../../../img/bg-14.png) top right  no-repeat;
+    background-size: 60% 100%;
+
+    @include respond (tab-land){
+        padding: 15.2rem 0 9rem;
+    }
+}
+
+.news-page {
+    margin: 12rem 0 18rem;
+
+    @include respond (tab-land){
+        margin: 6rem 0 8rem;
+    }
+    
+    &__categories{
+        display: flex;
+        margin: 4rem 0 6rem;
+    }
+
+    &__item {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        border-radius: 4px;
+        flex: 1 1;
+        border: 1px solid transparent;
+
+        font-weight: 700;
+        text-align: center;
+        font-size: $default-size-text;
+        color: #9A9CA5;
+        transition: all .3s linear;
+
+        a {
+            color: inherit;
+        }
+
+        &:first-child {
+            border: 1px solid #FF5A30;
+            color: $color-text-tertiary;
+        }
+
+        &:focus,
+        &:hover {
+            border: 1px solid #FF5A30;
+            color: $color-text-tertiary;
+        }
+    }
+
+    &__block-news {
+        margin-bottom: 6rem;
+        max-width: 126rem;
+        display: grid;
+        grid-column-gap: 3rem;
+        grid-row-gap: 6rem;
+        grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
+        justify-items: center;
+
+    }
+
+    &__card-news {
+        max-width: 60rem;
+        width: 100%;
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05), 
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04), 
+        0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &__num-pages{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item-pages {
+        margin: 0 1rem;
+        color: #424551;
+
+        font-size: $default-size-text;
+        font-weight: 700;
+        line-height: 1.6;
+
+        transition: color .2s linear;
+
+
+        &:focus ,
+        &:hover {
+            color: $color-text-tertiary;
+        }
+
+        a{
+            color: inherit;
+
+            svg {
+                fill: inherit;
+                width: 1.4rem;
+                height: 1.4rem;
+                display: block;
+            }
+        }
+
+
+        &:first-child {
+            color: $color-text-tertiary;
+        }
+
+    }
+
+}

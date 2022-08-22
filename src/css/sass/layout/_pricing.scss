@@ -1,0 +1,94 @@
+.pricing {
+    padding-top: 8rem;
+    padding-bottom: 11rem;
+    background: #F4F5F6 url(../../../img/bg-4.png) top -8rem left -18rem no-repeat;
+
+    @include respond (tab-land){
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+
+    .supported {
+        padding: 0;
+    }
+
+    &__table {
+        display: grid;
+        margin: 0 auto 12rem;
+        max-width: 123rem;
+        grid-template-columns: 
+            minmax(15rem, 1fr)
+            minmax(15rem, 24.5rem)
+            minmax(15rem, 24.5rem)
+            minmax(15rem, 24.5rem);
+
+        background-color: $color-primary;
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05), 
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04), 
+        0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+        border-collapse: collapse; // объединяет границы смежных ячеик
+        border: 1px solid #E5E8ED;
+
+        @include respond (tab-land){
+            margin: 0 auto 6rem;
+        }
+
+        thead,
+        tbody,
+        tr {
+            display: contents; 
+            font-size: $default-size-text;
+            color: #424551;
+        }
+
+        tr {
+            &:nth-child(odd) td{
+                background: #F4F5F7;
+            }
+
+            td:not(:first-child){
+                text-align: center;
+            }
+        }
+
+        td {
+            padding: 1.6rem 0 1.6rem 2.4rem;
+            align-self:center;
+        }
+
+        tr.pricing__footer-table {
+            th {
+                margin-top: 3.2rem;
+                margin-bottom: 3.2rem;
+
+                a{
+                    padding: 0 2.4rem;
+                }
+            }
+
+        }
+    }
+
+
+    &__title {
+        margin-top: 3.2rem;
+        color: $color-text-primary;
+        font-size: 2.4rem;
+    }
+
+    &__inner-title  {
+        color: $color-text-fourth;
+        font-size: 1.8rem;
+    }
+
+    &__inner-title-2  {
+        color: $color-text-primary;
+        font-size: 1.8rem;
+        text-align: left;
+        padding: 0 0 2.4rem 2.4rem;
+    }
+
+
+}

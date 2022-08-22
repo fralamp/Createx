@@ -1,0 +1,72 @@
+.services {
+    background: #F4F5F6 url(../../../img/bg-5.png) center no-repeat;
+    background-size: cover;
+    padding-top: 15rem;
+    padding-bottom: 18rem;
+    margin-bottom: 12rem;
+
+    @include respond (tab-land){
+        padding-bottom: 7rem;
+        margin-bottom: 6rem;
+    }
+
+    &__content {
+        max-width: 126rem;
+        padding: 0 1.5rem 12rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond (tab-land){
+            padding: 0 1.5rem 6rem;
+        }
+    }
+
+    &__title {
+        margin: 4rem auto 2.4rem 0;
+        max-width: 60rem;
+        text-align: left;
+        line-height: 1.3;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        max-width: 60rem;
+        color: $color-text-fourth;
+        text-align: left;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 57rem;
+    }
+
+    &__text {
+        max-width: 57rem;
+        margin-right: 1.5rem;
+
+        &--reverse{
+            margin-right: 0;
+            margin-left: 1.5rem;
+        }
+    }
+
+    &__inner-title {
+        text-align: left;
+
+    }
+
+    &__inner-paragraph {
+        margin: 2.4rem auto 4.8rem 0;
+    
+        font-size: $default-size-text;
+        color: $color-text-fourth;
+    }
+
+
+}
+

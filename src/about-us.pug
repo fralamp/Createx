@@ -1,0 +1,367 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./css/sass/main.scss')
+  title ABOUT US
+body
+  include ./partion/header
+  main.main
+    article.section-about-us
+        .container
+            ul.breadcrumbs
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="index.pug") 
+                        |Homepage
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="about-us.pug") 
+                        |About Us
+            h1.more-services__title
+                |ABOUT US
+            p.more-services__subtitle
+                |Createx Construction Bureau has been successfully operating in&nbsp;the USA construction market since 2000. We&nbsp;are proud to&nbsp;offer you quality construction and exemplary service.
+        img.about-us__background(src='../img/bg-12.png' alt='background about us')
+    section.about-us
+        .container
+            .about-us__achivments
+                .about-us__achivments-blocks 
+                    svg
+                        use(xlink:href='../img/svg/sprite3.svg#icon-like')
+                    span
+                        |60%
+                    span
+                        |Clients on&nbsp;the recommendation of&nbsp;friends
+                .about-us__achivments-blocks 
+                    svg
+                        use(xlink:href='../img/svg/sprite3.svg#icon-repairs')
+                    span
+                        |2400+
+                    span
+                        |Apartments renovated
+                .about-us__achivments-blocks 
+                    svg
+                        use(xlink:href='../img/svg/sprite5.svg#icon-qualifid')
+                    span
+                        |670
+                    span
+                        |Qualified specialists
+                .about-us__achivments-blocks 
+                    svg
+                        use(xlink:href='../img/svg/sprite5.svg#icon-design')
+                    span
+                        |150000+&nbsp;#[sup m2]
+                    span
+                        |Finishing work was carried out
+
+        .about-us__content
+            .container
+                .about-us__quote
+                    img.about-us__quote-img(src="../img/brands/face3.jpg", alt="CEO photo")
+                    blockquote.about-us__blockquote
+                        img.about-us__quote-icon(src="../img/svg/quote.svg", alt="qoute icon")
+                        p 
+                            |Dapibus nec vitae ante mattis. Aliquam phasellus ac dui augue in. Sed aliquet in egestas hac at proin sed quam. Etiam aliquet sagittis non, massa cum pulvinar. Et in leo, tempus purus vestibulum ut blandit et mi. Odio massa purus vel praesent arcu enim elit felis viverra.
+                        p 
+                            |Magna aliquam interdum mattis ipsum arcu. Elit odio elit viverra quis metus amet eleifend amet. Vet suspendisse faucibus tempor ipsum integer. 
+                        footer.about-us__quote-footer
+                            span 
+                                |Courtney Alexander
+                            span 
+                                |CEO&nbsp;&mdash; Createx Construction Bureau
+                            img.about-us__quote-signature(src="../img/svg/signature.svg", alt="signature")
+        article.about-us__inner-container
+            .our-values
+                h2.our-values__title
+                    | Our core values
+                p.our-values__subtitle
+                    | Our mission is&nbsp;to&nbsp;set the highest standards for construction sphere.
+                .our-values__cards
+                    .our-values__card
+                        svg
+                            use(xlink:href='../img/svg/sprite3.svg#icon-like')
+                        span.our-values__inner-title
+                            | Quality
+                        p.our-values__inner-subtitle
+                            | Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+                    .our-values__card.our-values__card--central
+                        svg
+                            use(xlink:href='../img/svg/sprite2.svg#icon-hand')
+                        span.our-values__inner-title
+                            | Safety
+                        p.our-values__inner-subtitle
+                            | Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
+                    .our-values__card
+                        svg
+                            use(xlink:href='../img/svg/sprite1.svg#icon-comfort')
+                        span.our-values__inner-title
+                            | Comfort
+                        p.our-values__inner-subtitle
+                            | Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.            
+                .about-us__history
+                    .project__container
+                        h2.project__title
+                            | Our history
+                        button.arrow.arrow--project(href='#')
+                            svg.arrow__pic
+                                use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')                           
+                        button.arrow.arrow--project(href='#')
+                            svg.arrow__pic
+                                use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')                          
+                    .about-us__history-container 
+                        .about-us__history-phase 
+                            ul.about-us__history-list
+                                li.selection
+                                    a(href="#")  
+                                        |Present
+                                li
+                                    a(href="#")  
+                                        |March 2019
+                                li
+                                    a(href="#")  
+                                        |November 2018
+                                li
+                                    a(href="#")  
+                                        |July 2015
+                                li
+                                    a(href="#")  
+                                        |August 2010
+                                li
+                                    a(href="#")  
+                                        |February 2007
+                                li
+                                    a(href="#")  
+                                        |May 2004
+                                li
+                                    a(href="#")  
+                                        |October 2001
+                                li
+                                    a(href="#")  
+                                        |June 2000
+                        .about-us__history-preview
+                            img.about-us__history-img(src="../img/brands/building.jpg", alt="phase photo")
+                            p 
+                                |Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam posuere malesuada magnis. Bcelerisque dapibus.  Eu nec vitae, 
+        article.supported.supported--about
+            h2.supported__title.supported__title--about
+                | Our partners
+            p.supported__subtitle
+                | We&nbsp;are supported by&nbsp;12+&nbsp;industry bodies and media partners
+            .supported__container
+                .supported__block-partner
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img/brands/brand-1.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img/brands/brand-2.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img//brands/brand-3.png' alt='icon partners')
+                .supported__block-partner                        
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img/brands/brand-4.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img/brands/brand-5.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img/brands/brand-6.png' alt='icon partners')
+                .supported__block-partner                        
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img/brands/brand-7.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img/brands/brand-8.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img//brands/brand-9.png' alt='icon partners')
+                .supported__block-partner                        
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img/brands/brand-10.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img/brands/brand-11.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='../img/brands/brand-12.png' alt='icon partners')
+        article.our-team 
+            h2.our-team__title
+                |Our team
+            p.our-team__subtitle 
+                |People are at&nbsp;the heart of&nbsp;Createx Construction Bureau
+            .our-team__cards 
+                .our-team__card 
+                    .our-team__card-top
+                        img.our-team__card-img(src="../img/brands/face11.jpg", alt="CEO photo")
+                        .our-team__social 
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                    .our-team__text
+                        span 
+                            |Courtney Alexander
+                        span 
+                            |CEO, Co-Founder
+                .our-team__card 
+                    .our-team__card-top
+                        img.our-team__card-img(src="../img/brands/face4.jpg", alt="CEO photo")
+                        .our-team__social 
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                    .our-team__text
+                        span 
+                            |Calvin Fox
+                        span 
+                            |CTO, Co-Founder
+                .our-team__card 
+                    .our-team__card-top
+                        img.our-team__card-img(src="../img/brands/face5.jpg", alt="CEO photo")
+                        .our-team__social 
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                    .our-team__text
+                        span 
+                            |Johnny Lane
+                        span 
+                            |Commercial Manager
+                .our-team__card 
+                    .our-team__card-top
+                        img.our-team__card-img(src="../img/brands/face6.jpg", alt="CEO photo")
+                        .our-team__social 
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                    .our-team__text
+                        span 
+                            |Diane Mccoy
+                        span 
+                            |Director of Human Resources
+                .our-team__card 
+                    .our-team__card-top
+                        img.our-team__card-img(src="../img/brands/face7.jpg", alt="CEO photo")
+                        .our-team__social 
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                    .our-team__text
+                        span 
+                            |Judith Warren
+                        span 
+                            |Lead Accountant
+                .our-team__card 
+                    .our-team__card-top
+                        img.our-team__card-img(src="../img/brands/face8.jpg", alt="CEO photo")
+                        .our-team__social 
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                    .our-team__text
+                        span 
+                            |Floyd Simmmons
+                        span 
+                            |Finacial Director
+                .our-team__card 
+                    .our-team__card-top
+                        img.our-team__card-img(src="../img/brands/face9.jpg", alt="CEO photo")
+                        .our-team__social 
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                    .our-team__text
+                        span 
+                            |Serenity Edwards
+                        span 
+                            |Director of Marketing
+                .our-team__card 
+                    .our-team__card-top
+                        img.our-team__card-img(src="../img/brands/face10.jpg", alt="CEO photo")
+                        .our-team__social 
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                            a.our-team__link(href="#" target="_blank") 
+                                svg.our-team__icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                    .our-team__text
+                        span 
+                            |Shawn Edwards
+                        span 
+                            |Tech Lead
+            p.our-team__position 
+                |Become a&nbsp;part of&nbsp;the best team in&nbsp;the construction market of&nbsp;the USA.
+                a(href="av-positions.pug")
+                    |Available Positions
+        article.our-team__map
+            .container
+                h2.our-team__title.mb-6
+                    |We work worldwide 
+                img(src="../img/map.png", alt="map")
+
+    article.article-global-form
+      .container
+        .content.content--form
+          form#global-form.form-global(action='#' method='post' name='form-global')
+            h3.form-global__title
+              | A quick way to discuss details
+            label.form-global__label(for='name')
+              | Name*
+              input.form-global__input(type='text' name='name' placeholder='Your name' required='')
+            label.form-global__label(for='telephone')
+              | Phone*
+              input.form-global__input(type='tel' name='telephone' placeholder='Your phone number' required='')
+            label.form-global__label(for='email')
+              | Email
+              input.form-global__input(type='email' name='email' placeholder='Your working email')
+            label.form-global__label(for='email')
+              | Message*
+              input.form-global__input(type='text' name='Message' placeholder='Your message' required='')
+            .form-global__block-agreement
+              input#checkbox-inf.form-global__checkbox(type='checkbox' required='')
+              label.form-global__label.form-global__label--checkbox(for='checkbox-inf')
+                | I agree to receive communications from Createx Construction Bureau.
+            button.form-global__btn(type='submit' form='global-form')
+              | send request
+  include ./partion/footer

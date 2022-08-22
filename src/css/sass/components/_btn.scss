@@ -1,0 +1,295 @@
+.btn {
+    display: inline-block;
+    padding: 0 5.4rem;
+
+    color: $color-text-secondary;
+    background-color: $color-secondary;
+    border-radius: 4px;
+    border: 1px solid #FF5A30;
+
+    font-size: $default-size-text;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 3.2;
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: all .3s linear;
+
+    &:hover,
+    &:focus {
+        background-color: #ff5a30b3;
+    }
+
+    &--transparent {
+        background-color: transparent;
+        color: $color-text-tertiary;
+        padding: 0 4.4rem;
+
+        &:hover,
+        &:focus {
+            background-color: $color-secondary;
+            color: $color-text-secondary;
+        }
+    }
+
+    &--form {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+}
+
+.btn-link {
+    display: inline-block;
+    color: $color-text-secondary;
+    background-color: $color-secondary;
+    font-weight: 700;
+    line-height: 3.2;
+    font-size: $default-size-text;
+    cursor: pointer;
+    padding: 0 4rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background-color .3s ease;
+
+    &:hover,
+    &:focus {
+        background-color: #ff5a30b3;
+    }
+
+    &--project {
+        padding: 0 3.2rem;
+        font-size: 1.4rem;
+        color: $color-text-tertiary;
+        background-color: $color-primary;
+        margin-bottom: 2.4rem;
+        border: 1px solid $color-secondary;
+    }
+
+    &--anchor {
+        display: inline-block;
+        border-radius: 4px;
+        padding: 0.8rem;
+        margin-left: 1.6rem;
+        line-height: 0;
+
+        & svg {
+            fill: $color-primary;
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+
+    &--transparent {
+        background-color: transparent;
+        border: 1px solid $color-secondary;
+        font-size: 1.4rem;
+        color: $color-text-tertiary;
+        padding: 0 3.2rem;
+
+        &:hover,
+        &:focus {
+            background-color: $color-secondary;
+            color: $color-text-secondary;
+        }
+    }
+
+    &--more-services{
+        position: absolute;
+        bottom: -2.6rem;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 11.2rem;
+        border: 1px solid $color-secondary;
+
+        &:hover,
+        &:focus {
+            background-color: $color-primary;
+            color: $color-text-tertiary;
+        }
+    }
+
+}
+
+.load-more {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #424551;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6;
+
+    cursor: pointer;
+
+    &__img{
+        margin-right: 1.6rem;
+    }
+}
+
+.arrow {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 1.2rem 1.2rem 1rem;
+    background-color: $color-primary;
+    border: none;
+    cursor: pointer;
+
+    &__pic{
+        width: 2.4rem;
+        height: 2.2rem;
+        fill: #424551;
+    }
+
+    &--hero {
+        position: absolute;
+        top: 50%;
+        z-index: 3;
+
+        @include respond (tab-land){
+            top: 70%;
+        }
+
+        @include respond (tab-port){
+            top: 65%;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $color-secondary;
+        }
+
+        &:hover svg,
+        &:focus svg {
+            fill: $color-primary;
+        }
+
+        &:first-child {
+            left: 5px;
+        }
+
+        &:last-child {
+            right: 5px;
+        }
+
+    }
+
+    &--project {
+        background-color: transparent;
+        transition: all .4s ease-in-out;
+
+        &:hover,
+        &:focus {
+            background-color: $color-secondary;
+        }
+
+        &:hover svg,
+        &:focus svg {
+            fill: $color-primary;
+        }
+    }
+
+    &--more-works {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        opacity: .6;
+        transition: all .3s linear;
+
+        svg {
+            fill: #000;
+        }
+
+        &:nth-child(even) {
+            left: 3.2rem;
+        }
+
+        &:nth-child(odd) {
+            right: 3.2rem;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+            background-color: $color-primary;
+        }
+
+        &:hover svg,
+        &:focus svg {
+            fill: $color-fourth;
+        }
+    }
+    
+}
+
+.burger {
+    display: none;
+    position: relative;
+    width: 3rem;
+    height: 2rem;
+    padding: 0;
+
+    color: transparent;
+
+    border: none;
+    margin-right: 2rem;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    &::before,
+    &::after,
+    span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $color-fourth;
+        left: 0;
+
+    }
+
+    &::before,
+    &::after{
+        position: absolute;
+        content: "";
+        transition: transform .2s linear;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after{
+        bottom: 0;
+    }
+
+    span {
+        transition: opacity .2s linear;
+    }
+
+    .show-nav & {
+        span {
+            opacity: 0;
+        }
+
+        &::before,
+        &::after{
+            top: 50%;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    @include respond (tab-land){
+        display: block;
+    }
+}

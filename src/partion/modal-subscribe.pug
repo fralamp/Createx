@@ -1,0 +1,14 @@
+#modal-subscribe.modal
+    .modal__content
+        h3.modal__title
+            |Subscribe to our newsletter
+        button.modal__cloe(type='button')
+            img(src="../img/svg/close.svg", alt="close button icon")
+        form.form-subscribe(action='/' method='post')
+            .from-subscribe__control 
+                label.from-subscribe__label(for='name')
+                    | Name*
+                input.from-subscribe__input(type='text' name='name' placeholder='Your name' required)
+                label.from-subscribe__label(for='email')
+                    | Email*
+                input.from-subscribe__input(type='email' name='email' placeholder='Your working email')     

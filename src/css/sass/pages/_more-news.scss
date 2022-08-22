@@ -1,0 +1,130 @@
+.article-more-news{
+    padding: 15.2rem 0 16rem;
+    background-color: #F4F5F7;
+
+    .news__type{
+        color: $color-text-tertiary;
+        font-weight: 700;
+    }
+
+    .news__inner-info {
+        font-size: $default-size-text;
+    }
+}
+
+.more-news {
+    position: relative;
+    display: block;
+    padding: 50rem 0 18rem;
+    background-color: white;
+
+    @include respond (tab-land){
+        padding: 40rem 0 8rem;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social{
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+
+        span {
+            font-weight: 700;
+            font-size: $default-size-text;
+            margin-right: 1.2rem;
+        }
+    }
+
+    &__social-link {
+        transition: svg .3 linear;
+        &:not(:last-child) {
+            margin-right: 1.2rem;
+        }
+
+        svg {
+            fill: #787A80;
+            width: 2.4rem;
+            height: 2.4rem;
+            display: block;
+        }
+
+        &:hover,
+        &:focus {
+            svg {
+                fill: $color-secondary;
+            }
+        }
+    }
+
+    &__top-img {
+        left: 50%;
+        top: -8rem;
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: 3;
+        max-width: 126rem;
+        padding: 0 1.5rem;
+        width: 100%;
+        height: auto;
+
+    }
+
+    &__container {
+        max-width: 84rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+
+        > pre {
+            max-width: 81rem;
+            font-size: $default-size-text;
+            line-height: 1.6;
+            color: #424551;
+            white-space: break-spaces;
+            font-family: inherit;
+        }
+
+        .constructive__text{
+            margin-bottom: 4px;
+        }
+    }
+
+    &__inner-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2.4rem;
+    }
+
+    &__blockquote{
+        padding-left: 5.8rem;
+        margin: 4.8rem 0;
+        position: relative;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            width: 2.8rem;
+            height: 2rem;
+        }
+
+        p {
+            font-weight: 700;
+            font-size: 2rem;
+            color: $color-text-primary;
+        }
+    }
+
+    &__text{
+        color: #424551;
+        margin-bottom: 2.4rem;
+    }
+
+
+
+
+}

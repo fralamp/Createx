@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="../img//title.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&amp;family=Ubuntu:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/sass/main.scss">
+  <title>CONTACTS</title>
+</head>
+<body>
+  <header class="header" id="top"> 
+    <nav class="navigation">
+      <div class="logo-box"><a class="logo-box__link" href="index.pug"><img class="logo-box__img" src="../img/svg/logo.svg" alt="link to home page"></a></div>
+      <ul class="navigation__nav">
+        <li class="navigation__list"><a class="navigation__link" href="about-us.pug">About&nbsp;Us</a></li>
+        <li class="navigation__list"><a class="navigation__link" href="services.pug">Services</a></li>
+        <li class="navigation__list"><a class="navigation__link" href="work.pug">Work</a></li>
+        <li class="navigation__list"><a class="navigation__link" href="news.pug">News</a></li>
+        <li class="navigation__list"><a class="navigation__link" href="contacts.pug">Contacts</a></li>
+      </ul>
+      <div class="navigation__contact">
+        <div class="navigation__inner-block">
+          <svg class="navigation__contact-icon">
+            <use xlink:href="../img/svg/sprite2.svg#icon-iPhone"></use>
+          </svg>
+          <div class="navigation__contact-text"><span class="navigation__text">Call&nbsp;us</span><a class="navigation__inner-link" href="tel:+74055550128">(405) 555-0128</a></div>
+        </div>
+        <div class="navigation__inner-block">
+          <svg class="navigation__contact-icon">
+            <use xlink:href="../img/svg/sprite1.svg#icon-chat"></use>
+          </svg>
+          <div class="navigation__contact-text"><span class="navigation__text">Talk&nbsp;to&nbsp;us</span><a class="navigation__inner-link" href="mailto:hello@createx.com">hello@createx.com</a></div>
+        </div>
+      </div>
+      <!-- contacts end-->
+    </nav>
+  </header>
+  <main class="main">
+    <article class="article-contacts">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.pug">
+               Homepage</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="contacts.pug">
+               Contacts</a></li>
+        </ul>
+        <h1 class="title">
+           CONTACTS</h1>
+        <p class="subtitle">
+           Contact us for all your construction needs. We always welcome any questions and comments.</p>
+      </div>
+    </article>
+    <article class="contacts">
+      <div class="container"> 
+        <h2 class="contacts__title">
+           Contact&nbsp;us</h2>
+        <p class="contacts__subtitle">
+           Please complete the form. Detailed information will help&nbsp;us to&nbsp;make a&nbsp;tuned offer.</p>
+        <div class="contacts__content"> 
+          <div class="contacts__photo"> <img src="../img/brands/face12.jpg" alt="contact photo"></div>
+          <div class="contacts__form"> 
+            <form class="form-contacts" action="/" method="post"> 
+              <div class="form-contacts__controls"> 
+                <label class="form-contacts__label" for="name">Name*
+                  <input class="form-contacts__input" type="text" name="name" placeholder="Your name" required="">
+                </label>
+                <label class="form-contacts__label" for="interested">
+                   I am interested in*
+                  <input class="form-contacts__input" type="text" name="interested" placeholder="Choose your interested" list="interested" required>
+                  <datalist class="form-contacts__datalis" id="interested"> 
+                    <option value="Construction"> </option>
+                    <option value="Project Development"> </option>
+                    <option value="Interior Design"></option>
+                    <option value="Repairs"></option>
+                  </datalist>
+                </label>
+              </div>
+              <div class="form-contacts__controls"> 
+                <label class="form-contacts__label" for="telephone">Phone*
+                  <input class="form-contacts__input" type="tel" name="telephone" placeholder="Your phone number" required="">
+                </label>
+                <label class="form-contacts__label" for="cities">Location*
+                  <input class="form-contacts__input" type="text" name="cities" placeholder="Choose your location" list="cities" required>
+                  <datalist class="form-contacts__datalis" id="cities"> 
+                    <option value="New York"> </option>
+                    <option value="Los Angeles"> </option>
+                    <option value="San Francisco"></option>
+                    <option value="Washington"></option>
+                  </datalist>
+                </label>
+              </div>
+              <div class="form-contacts__controls"> 
+                <label class="form-contacts__label" for="email">Email
+                  <input class="form-contacts__input" type="email" name="email" placeholder="Your working email">
+                </label>
+                <label class="form-contacts__label form-contacts__controls--mini">
+                   Preferred contact method
+                  <div class="form-contacts__controls--radio"> 
+                    <input class="rad" type="radio" name="contact-method" id="contactPhone" value="phone" checked>
+                    <label class="form-contacts__label--radio" for="contactPhone">Phone</label>
+                    <input class="rad" type="radio" name="contact-method" id="contactEmail" value="email">
+                    <label class="form-contacts__label--radio" for="contactEmail">Email  </label>
+                    <input class="rad" type="radio" name="contact-method" id="contactViber" value="phone">
+                    <label class="form-contacts__label--radio" for="contactViber">Viber</label>
+                  </div>
+                </label>
+              </div>
+              <label class="form-contacts__label" for="message">Message*</label>
+              <textarea class="form-contacts__textarea" id="message" name="message" rows="6" placeholder="Your message">                                  </textarea>
+              <div class="form-contacts__agreement">
+                <input class="form-contacts__checkbox" id="checkbox-inf" type="checkbox" required>
+                <label class="form-contacts__label--checkbox" for="checkbox-inf">I agree to receive communications from Createx Construction Bureau.</label>
+                <button class="form-contacts__btn" type="submit" form="form-contacts">send&nbsp;request              </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="our-offices"> 
+      <div class="container mb-12"> 
+        <h2 class="our-offices__title">
+           Our offices </h2>
+        <p class="our-offices__subtitle">
+           Give&nbsp;us a&nbsp;call, send&nbsp;us a&nbsp;note or&nbsp;visit our office. We&nbsp;can&rsquo;t wait to&nbsp;hear from you!</p>
+        <div class="our-offices__cards"> 
+          <div class="our-offices__card">
+            <h4 class="our-offices__inner-title">
+               New York, USA    </h4>
+            <address class="our-offices__address">8502 Preston Rd. Inglewood, New York 98380</address><a class="our-offices__map-link" href="#" target="_blank">
+               See on the map</a><span class="our-offices__info">
+               Call:               <a class="our-offices__phone" href="tel:4055550128" target="_blank">
+                 (405) 555-0128</a></span><span class="our-offices__info">Email:             <a class="our-offices__email" href="mailto:hello@createx.com" target="_blank">
+                 hello@createx.com</a></span><span class="our-offices__info">Schedule:<span>
+                 Mon - Fri 9:00 - 18:00</span></span>
+          </div>
+          <div class="our-offices__card our-offices__card--central">
+            <h4 class="our-offices__inner-title">
+               New Jersey, USA   </h4>
+            <address class="our-offices__address">2464 Royal Ln. Mesa, New Jersey 45463</address><a class="our-offices__map-link" href="#" target="_blank">
+               See on the map</a><span class="our-offices__info">
+               Call:               <a class="our-offices__phone" href="tel:8085550111" target="_blank">
+                 (808) 555-0111</a></span><span class="our-offices__info">Email:             <a class="our-offices__email" href="mailto:hello@createx.com" target="_blank">
+                 hello@createx.com</a></span><span class="our-offices__info">Schedule:<span>
+                 Mon - Fri 9:00 - 18:00</span></span>
+          </div>
+          <div class="our-offices__card">
+            <h4 class="our-offices__inner-title">
+               San Francisco, USA </h4>
+            <address class="our-offices__address">8502 Preston Rd. Inglewood, San Francisco 98380</address><a class="our-offices__map-link" href="#" target="_blank">
+               See on the map</a><span class="our-offices__info">
+               Call:               <a class="our-offices__phone" href="tel:5055550125" target="_blank">
+                 (505) 555-0125</a></span><span class="our-offices__info">Email:             <a class="our-offices__email" href="mailto:hello@createx.com" target="_blank">
+                 hello@createx.com</a></span><span class="our-offices__info">Schedule:<span>
+                 Mon - Fri 9:00 - 18:00</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="our-offices__social"> 
+        <h2 class="our-offices__title mb-4">
+           Find&nbsp;us at </h2>
+        <div class="our-offices__social-links"><a class="whatsapp" href="#">
+            <svg>
+              <use xlink:href="../img/svg/sprite1.svg#icon-whatsapp">           </use>
+            </svg></a><a class="messenger" href="#">
+            <svg>
+              <use xlink:href="../img/svg/sprite1.svg#icon-messenger">           </use>
+            </svg></a><a class="facebook" href="#">
+            <svg>
+              <use xlink:href="../img/svg/sprite1.svg#icon-facebook">           </use>
+            </svg></a><a class="twitter" href="#">
+            <svg>
+              <use xlink:href="../img/svg/sprite1.svg#icon-twitter">           </use>
+            </svg></a><a class="youtube" href="#">
+            <svg>
+              <use xlink:href="../img/svg/sprite1.svg#icon-youtube">           </use>
+            </svg></a></div>
+      </div>
+    </article>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__inner-container">
+          <div class="footer__social">
+            <div class="logo-box"><a class="logo-box__link" href="index.html"><img class="logo-box__img" src="../img/svg/logo-ft.png" alt="link to home page"></a></div><a class="footer__social-link" href="#" target="_blank">
+              <svg class="footer__social-icon" aria-label="icon whatsapp">
+                <use xlink:href="../img/svg/sprite1.svg#icon-whatsapp"></use>
+              </svg></a><a class="footer__social-link" href="#" target="_blank">
+              <svg class="footer__social-icon" aria-label="icon messenger">
+                <use xlink:href="../img/svg/sprite1.svg#icon-messenger"></use>
+              </svg></a><a class="footer__social-link" href="#" target="_blank">
+              <svg class="footer__social-icon" aria-label="icon facebook">
+                <use xlink:href="../img/svg/sprite1.svg#icon-facebook"></use>
+              </svg></a><a class="footer__social-link" href="#" target="_blank">
+              <svg class="footer__social-icon" aria-label="icon twitter">
+                <use xlink:href="../img/svg/sprite1.svg#icon-twitter"></use>
+              </svg></a><a class="footer__social-link" href="#" target="_blank">
+              <svg class="footer__social-icon" aria-label="icon youtube">
+                <use xlink:href="../img/svg/sprite1.svg#icon-youtube"></use>
+              </svg></a>
+          </div>
+          <p class="footer__text">Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.</p>
+        </div>
+        <div class="footer__inner-container">
+          <h4 class="form-mail__title">Let&rsquo;s stay in&nbsp;touch</h4>
+          <form class="form-mail" action="#" method="post">
+            <input class="form-mail__input" type="email" name="email" required="" placeholder="Your email address ">
+            <button class="form-mail__btn" type="submit">subscribe</button>
+          </form>
+          <p class="form-mail__info">*Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.</p>
+        </div>
+      </div>
+      <!-- footer__top end-->
+      <div class="footer__middle">
+        <div class="footer__place-info">
+          <h4 class="footer__inner-title">HEAD OFFICE</h4>
+          <div class="footer__contacts"><span>Address:</span>
+            <address>8502 Preston Rd. Inglewood, New York</address>
+          </div>
+          <div class="footer__contacts"><span>Call:</span><a href="tel:+74055550128">(405) 555-0128</a></div>
+          <div class="footer__contacts"><span>Email:</span><a href="mailto:hello@createx.com">hello@createx.com</a></div>
+        </div>
+        <div class="footer__nav footer__nav--first">
+          <h4 class="footer__inner-title">WHO WE&nbsp;ARE</h4>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">About&nbsp;Us</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Available Positions</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h4 class="footer__inner-title">OUR EXPERIENCE</h4>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="services.html">Services</a></li>
+            <li class="footer__item"><a class="footer__link" href="work.pug">Work</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">News</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer__middle end-->
+      <div class="footer__bottom">
+        <div class="footer__reserved"><span>&copy;&nbsp;All rights reserved. Made with
+            <svg>
+              <use xlink:href="../img/svg/sprite1.svg#icon-heart"></use>
+            </svg>                        by Createx Studio</span></div>
+        <div class="footer__anchor"><span>GO TO TOP</span><a class="btn-link btn-link--anchor" href="#top">
+            <svg>
+              <use xlink:href="../img/svg/sprite1.svg#icon-arrow_up"></use>
+            </svg></a></div>
+      </div>
+    </div>
+  </footer>
+</body>

@@ -1,0 +1,52 @@
+.comments {
+
+    &__title {
+        text-align: center;
+        margin-bottom: 6rem;
+    }
+
+    &__card {
+        display: grid;
+        grid-column-gap: 3rem;
+        grid-template-columns: minmax(max-content, 15rem) 1fr;
+        margin-bottom: 6rem;
+    }
+
+    &__autor-name{
+        display: block;
+        font-weight: 700;
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    &__date {
+        font-size: 1.4rem;
+        color: $color-text-fourth;
+    }
+
+    &__paragraph {
+        color: #424551;
+        margin-bottom: 1.6rem;
+
+        .comment__link-autor{
+            color: $color-text-tertiary;
+            font-size: $default-size-text;
+            font-weight: 700;
+            margin-right: 4px;
+        }
+    }
+
+    &__reply {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        color: $color-text-fourth;
+
+        img{
+            display: block;
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-right: 0.8rem;
+        }
+    }
+}

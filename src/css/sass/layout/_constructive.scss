@@ -1,0 +1,53 @@
+.constructive {
+    background-color: #F4F5F7;
+    margin-bottom: 18rem;
+
+    @include respond (tab-land){
+        margin-bottom: 9rem;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: -6rem;
+        z-index: 3;
+        display: block;
+        max-width: 49.5rem;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+
+        @include respond (tab-land){
+            width: 50%;
+        }
+
+        @include respond (tab-port){
+            display: none;
+        }
+    }
+
+    &__text {
+        flex: 0 1 50%;
+        margin-left: auto;
+
+        @include respond (tab-port){
+            margin: 0 auto;
+        }
+    }
+    
+    &__title {
+        text-align: left;
+        margin-bottom: 6rem;
+    }
+
+    &__inner-text {
+        display: flex;
+        align-items: center;
+        font-size: $default-size-text;
+        margin-bottom: 2rem;
+
+        img {
+            margin-right: 1.6rem;
+        }
+    }
+        
+}

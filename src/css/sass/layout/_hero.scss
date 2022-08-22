@@ -1,0 +1,74 @@
+.hero {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: 123rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__title {
+        max-width: 57.7rem;
+        
+        color: $color-text-secondary;
+
+        & span {
+            margin-left: -1.5rem;
+            color: $color-text-tertiary; 
+        }
+    }
+
+    &__subtitle {
+        max-width: 59.5rem;
+        display: inline-block;
+        margin: 2.4rem 0 6.1rem;
+        color: $color-text-secondary;
+        font-size: 2rem;
+    }
+
+    &__btn {
+        display: flex;
+        margin-bottom: 18rem;
+
+        @include respond (tab-port){
+            margin-bottom: 12rem;
+        }
+    }
+
+    &__link-learn-more {
+        display: inline-block;
+        margin-right: 2.4rem;
+        padding: 0 3.9rem;
+        font-size: $default-size-text;
+
+        color: $color-text-secondary;
+        background-color: transparent;
+        font-weight: 700;
+        line-height: 3.2;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    &__slider {
+        display: flex;
+    }
+
+    &__num-slide{
+        display: block;
+        position: relative;
+        padding: 0 14.6rem 1.2rem 0;  
+        margin-right: 4px; 
+        color: $color-tertiary;
+        font-size: 2.8rem;
+        border-bottom: 2px solid #fff;
+        opacity: .3;
+
+        &:nth-child(1){
+            opacity: 1;
+        }
+    }
+
+}

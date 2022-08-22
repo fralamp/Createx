@@ -1,0 +1,172 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./css/sass/main.scss')
+  title CONTACTS
+body
+  include ./partion/header
+  main.main
+    article.article-contacts
+      .container
+          ul.breadcrumbs
+              li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.pug") 
+                      |Homepage
+              li.breadcrumbs__item
+                  a.breadcrumbs__link(href="contacts.pug") 
+                      |Contacts
+          h1.title 
+            |CONTACTS
+          p.subtitle 
+            |Contact us for all your construction needs. We always welcome any questions and comments.
+    article.contacts
+      .container 
+        h2.contacts__title 
+          |Contact&nbsp;us
+        p.contacts__subtitle 
+          |Please complete the form. Detailed information will help&nbsp;us to&nbsp;make a&nbsp;tuned offer.
+        .contacts__content 
+          .contacts__photo 
+            img(src="../img/brands/face12.jpg", alt="contact photo")
+          .contacts__form 
+            form#form-contacts.form-contacts(action='/' method='post') 
+              .form-contacts__controls 
+                label.form-contacts__label(for='name')
+                  | Name*
+                  input.form-contacts__input(type='text' name='name' placeholder='Your name' required='')
+                label.form-contacts__label(for='interested') 
+                  | I am interested in*
+                  input.form-contacts__input(type='text' name='interested' placeholder='Choose your interested' list='interested' required)
+                  datalist#interested.form-contacts__datalis 
+                    option(value="Construction") 
+                    option(value="Project Development") 
+                    option(value="Interior Design")
+                    option(value="Repairs")
+              .form-contacts__controls 
+                label.form-contacts__label(for='telephone')
+                  | Phone*
+                  input.form-contacts__input(type='tel' name='telephone' placeholder='Your phone number' required='')      
+                label.form-contacts__label(for='cities')
+                  | Location*
+                  input.form-contacts__input(type='text' name='cities' placeholder='Choose your location' list='cities' required)
+                  datalist#cities.form-contacts__datalis  
+                      option(value="New York") 
+                      option(value="Los Angeles") 
+                      option(value="San Francisco")
+                      option(value="Washington")
+              .form-contacts__controls 
+                label.form-contacts__label(for='email')
+                  | Email
+                  input.form-contacts__input(type='email' name='email' placeholder='Your working email')    
+                label.form-contacts__label.form-contacts__controls--mini 
+                  | Preferred contact method
+                  .form-contacts__controls--radio 
+                    input.rad(type='radio' name='contact-method' id='contactPhone' value='phone' checked)                                       
+                    label.form-contacts__label--radio(for="contactPhone")
+                      |Phone
+                    input.rad(type='radio' name='contact-method' id='contactEmail' value='email')                   
+                    label.form-contacts__label--radio(for="contactEmail")
+                      |Email  
+                    input.rad(type='radio' name='contact-method' id='contactViber' value='phone')                     
+                    label.form-contacts__label--radio(for="contactViber")
+                      |Viber
+              label.form-contacts__label(for='message')
+                  | Message*
+              textarea#message.form-contacts__textarea(name="message", rows="6" placeholder='Your message')                                   
+              .form-contacts__agreement
+                input#checkbox-inf.form-contacts__checkbox(type='checkbox' required)
+                label.form-contacts__label--checkbox(for='checkbox-inf')
+                  | I agree to receive communications from Createx Construction Bureau.
+                button.form-contacts__btn(type='submit' form='form-contacts')
+                  | send&nbsp;request              
+    article.our-offices 
+      .container.mb-12 
+        h2.our-offices__title 
+          |Our offices 
+        p.our-offices__subtitle 
+          |Give&nbsp;us a&nbsp;call, send&nbsp;us a&nbsp;note or&nbsp;visit our office. We&nbsp;can&rsquo;t wait to&nbsp;hear from you!
+        .our-offices__cards 
+          .our-offices__card
+            h4.our-offices__inner-title 
+              |New York, USA    
+            address.our-offices__address
+              |8502 Preston Rd. Inglewood, New York 98380
+            a.our-offices__map-link(href='#' target='_blank') 
+              |See on the map
+            span.our-offices__info 
+              |Call:               
+              a.our-offices__phone(href='tel:4055550128' target='_blank') 
+                |(405) 555-0128
+            span.our-offices__info
+              |Email:             
+              a.our-offices__email(href='mailto:hello@createx.com' target='_blank') 
+                |hello@createx.com
+            span.our-offices__info
+              |Schedule:
+              span 
+                |Mon - Fri 9:00 - 18:00
+          .our-offices__card.our-offices__card--central
+            h4.our-offices__inner-title 
+              |New Jersey, USA   
+            address.our-offices__address
+              |2464 Royal Ln. Mesa, New Jersey 45463
+            a.our-offices__map-link(href='#' target='_blank') 
+              |See on the map
+            span.our-offices__info 
+              |Call:               
+              a.our-offices__phone(href='tel:8085550111' target='_blank') 
+                |(808) 555-0111
+            span.our-offices__info
+              |Email:             
+              a.our-offices__email(href='mailto:hello@createx.com' target='_blank') 
+                |hello@createx.com
+            span.our-offices__info
+              |Schedule:
+              span 
+                |Mon - Fri 9:00 - 18:00
+          .our-offices__card
+            h4.our-offices__inner-title 
+              |San Francisco, USA 
+            address.our-offices__address
+              |8502 Preston Rd. Inglewood, San Francisco 98380
+            a.our-offices__map-link(href='#' target='_blank') 
+              |See on the map
+            span.our-offices__info 
+              |Call:               
+              a.our-offices__phone(href='tel:5055550125' target='_blank') 
+                |(505) 555-0125
+            span.our-offices__info
+              |Email:             
+              a.our-offices__email(href='mailto:hello@createx.com' target='_blank') 
+                |hello@createx.com
+            span.our-offices__info
+              |Schedule:
+              span 
+                |Mon - Fri 9:00 - 18:00
+      .our-offices__social 
+        h2.our-offices__title.mb-4 
+          |Find&nbsp;us at 
+        .our-offices__social-links
+          a.whatsapp(href='#')
+            svg
+              use(xlink:href='../img/svg/sprite1.svg#icon-whatsapp')            
+          a.messenger(href='#')
+            svg
+              use(xlink:href='../img/svg/sprite1.svg#icon-messenger')            
+          a.facebook(href='#')
+            svg
+              use(xlink:href='../img/svg/sprite1.svg#icon-facebook')            
+          a.twitter(href='#')
+            svg
+              use(xlink:href='../img/svg/sprite1.svg#icon-twitter')            
+          a.youtube(href='#')
+            svg
+              use(xlink:href='../img/svg/sprite1.svg#icon-youtube')            
+
+  include ./partion/footer

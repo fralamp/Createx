@@ -1,0 +1,57 @@
+.article-contacts{
+    background: #F4F5F7 url(../../../img/bg-15.png) top right no-repeat;
+    padding-top: 15rem;
+    padding-bottom: 21rem;
+    margin-bottom: 12rem;
+
+    @include respond (tab-land){
+        padding-bottom: 10rem;
+        margin-bottom: 6rem;
+    }
+}
+.contacts{
+
+    &__title {
+        margin-bottom: 2.4rem;
+    }
+
+    &__subtitle {
+        margin-bottom: 6rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min-content, 60rem));
+        grid-row-gap: 3rem;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12rem;
+
+        @include respond (tab-land){
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__photo {
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin: 0 auto;
+
+            @include respond (tab-land){
+                width: 70%;
+            }
+
+            @include respond (tab-port){
+                width: 50%;
+            }
+        }
+    }
+
+}
+

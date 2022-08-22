@@ -1,0 +1,16 @@
+.constraction{
+    max-width: 126rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    &__title {
+        margin-bottom: 2.4rem;
+    }
+
+    &__subtitle {
+        display: block;
+        margin-bottom: 6rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,199 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./css/sass/main.scss')
+  title MODERN COTTETGE
+body
+  include ./partion/header
+  main.main
+    section.more-works
+        article.container
+          ul.breadcrumbs
+              li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.pug") 
+                      |Homepage
+              li.breadcrumbs__item
+                  a.breadcrumbs__link(href="work.pug") 
+                      |Work
+              li.breadcrumbs__item
+                  a.breadcrumbs__link(href="more-works.pug") 
+                      |Modern Cottage
+          h2.more-works__title
+            |Modern Cottage
+          .more-works__album 
+            .more-works__slider 
+              img.more-works__img-top(src='../img/more-works/more-works-1.jpg' alt='photo Modern Cottage')
+            button.arrow.arrow--more-works(href='#')
+                svg.arrow__pic
+                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')                  
+            button.arrow.arrow--more-works(href='#')
+                svg.arrow__pic
+                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')                   
+          .more-works__album-mini 
+            img.more-works__img(src='../img/more-works/more-works-1-s.jpg' alt='photo Modern Cottage')
+            img.more-works__img(src='../img/more-works/more-works-2-s.jpg' alt='photo Modern Cottage')
+            img.more-works__img(src='../img/more-works/more-works-3-s.jpg' alt='photo Modern Cottage')
+            img.more-works__img(src='../img/more-works/more-works-4-s.jpg' alt='photo Modern Cottage')
+            img.more-works__img(src='../img/more-works/more-works-5-s.jpg' alt='photo Modern Cottage')
+            img.more-works__img(src='../img/more-works/more-works-6-s.jpg' alt='photo Modern Cottage')
+        article.more-works__container
+          .more-works__text-info
+            h2.more-works__inner-title 
+              |Project goal
+            p.more-works__inner-paragraph 
+              |Build a&nbsp;private house 840&nbsp;sq. feet with a&nbsp;large living room, three bedrooms, two bathrooms, a&nbsp;terrace, a&nbsp;pool and a&nbsp;garage for two cars.
+            p.more-works__inner-paragraph 
+              |Modern design and care for each family member to&nbsp;feel as&nbsp;comfortable as&nbsp;possible in&nbsp;the new home.
+          table.more-works__table 
+            thead
+              tr
+                th.more-works__table-row 
+                  |LOCATION
+                th 
+                  |2464 Royal Ln. Mesa, New Jersey
+              tr
+                th.more-works__table-row 
+                  |CLIENT
+                th 
+                  |Darlene Robertson
+              tr
+                th.more-works__table-row 
+                  |ARCHITECT
+                th 
+                  |HIK Architecture
+              tr
+                th.more-works__table-row 
+                  |SIZE
+                th 
+                  |840 sq. feet
+              tr
+                th.more-works__table-row 
+                  |VALUE
+                th 
+                  |$2&nbsp;million
+              tr
+                th.more-works__table-row 
+                  |COMPLETED
+                th 
+                  |May 2020
+        article.constructive
+          .container.container--constructive
+            img.constructive__img(src='../img/more-works/person.jpg' alt='Constructive decisions')
+            .constructive__text
+              h2.constructive__title
+                |Constructive decisions
+              .constructive__inner-text
+                img(src='../img/svg/check2.svg' alt='icon check')
+                span 
+                  |Vitae ultrices ornare eu sed in est quisque duis id.
+              .constructive__inner-text 
+                img(src='../img/svg/check2.svg' alt='icon check')
+                span 
+                  |A fermentum in morbi pretium aliquam adipiscing donec tempus.
+              .constructive__inner-text
+                img(src='../img/svg/check2.svg' alt='icon check')
+                span 
+                  |Mauris odio pellentesque commodo, diam.
+              .constructive__inner-text
+                img(src='../img/svg/check2.svg' alt='icon check')
+                span 
+                  |Fermentum vestibulum est fermentum, egestas gravida scelerisque quis.
+              .constructive__inner-text
+                img(src='../img/svg/check2.svg' alt='icon check')
+                span 
+                  |At pharetra libero blandit risus, fringilla sed commodo diam.
+              .constructive__inner-text
+                img(src='../img/svg/check2.svg' alt='icon check')
+                span 
+                  |Integer ultricies viverra ut enim viverra ut.
+        article.project.project--mb-10
+          .project__container
+            h2.project__title
+              | Similar projects
+            button.arrow.arrow--project(href='#')
+                svg.arrow__pic
+                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')                  
+            button.arrow.arrow--project(href='#')
+                svg.arrow__pic
+                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')                  
+          // container end
+          .cards
+            .card
+              img.card__img(src='../img/project/project5.jpg' alt='photo Luxury Beach House')
+              a.card__text(href="") 
+                span.card__name-project
+                  | Luxury Beach House
+                span.card__type-project
+                  | Private Houses
+              .card__text--invisible
+                span.card__name-project
+                  | Luxury Beach House
+                span.card__type-project
+                  | Private Houses
+                a.btn-link.btn-link--project(href='#')
+                  | View Project
+            .card
+              img.card__img(src='../img/project/project6.jpg' alt='photo Brown and Gray Painted House')
+              a.card__text(href="") 
+                span.card__name-project
+                  | Brown and Gray Painted House
+                span.card__type-project
+                  | Private houses
+              .card__text--invisible
+                span.card__name-project
+                  | Brown and Gray Painted House
+                span.card__type-project
+                  | Private houses
+                a.btn-link.btn-link--project(href='#')
+                  | View Project
+            .card
+              img.card__img(src='../img/more-services/more-services-4.jpg' alt='photo Scandinavian Style Interior')
+              a.card__text(href="") 
+                span.card__name-project
+                  | Scandinavian Style Interior
+                span.card__type-project
+                  | Private houses
+              .card__text--invisible
+                span.card__name-project
+                  | Scandinavian Style Interior
+                span.card__type-project
+                  | Private houses
+                a.btn-link.btn-link--project(href='#')
+                  | View Project      
+          .more-inf
+            p.more-inf__text
+              | Explore all our works
+            a.btn-link(href='work.pug')
+              | View portfolio    
+
+    article.article-global-form
+      .container
+        .content.content--form
+          form#global-form.form-global(action='#' method='post' name='form-global')
+            h3.form-global__title
+              | A quick way to discuss details
+            label.form-global__label(for='name')
+              | Name*
+              input.form-global__input(type='text' name='name' placeholder='Your name' required='')
+            label.form-global__label(for='telephone')
+              | Phone*
+              input.form-global__input(type='tel' name='telephone' placeholder='Your phone number' required='')
+            label.form-global__label(for='email')
+              | Email
+              input.form-global__input(type='email' name='email' placeholder='Your working email')
+            label.form-global__label(for='email')
+              | Message*
+              input.form-global__input(type='text' name='Message' placeholder='Your message' required='')
+            .form-global__block-agreement
+              input#checkbox-inf.form-global__checkbox(type='checkbox' required='')
+              label.form-global__label.form-global__label--checkbox(for='checkbox-inf')
+                | I agree to receive communications from Createx Construction Bureau.
+            button.form-global__btn(type='submit' form='global-form')
+              | send request
+  include ./partion/footer

@@ -1,0 +1,25 @@
+.breadcrumbs {
+    display: flex;
+
+    &__item {
+        font-size: 1.4rem;
+        color: #424551;
+
+        &:not(:first-child) {
+            &::before{
+                content: "/";
+                width: 100%;
+                margin-left: .8rem;
+                margin-right: 0.8rem;
+            }
+        }
+             
+        &:last-child{
+            color: #9A9CA5;
+        }
+    }
+
+    &__link {
+        color: inherit;
+    }
+}

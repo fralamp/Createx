@@ -1,0 +1,26 @@
+.project{
+    margin: 0 auto;
+    max-width: 126rem;
+    padding: 0 1.5rem;
+
+    &--mb-10{
+        margin: 0 auto 10rem;
+
+        @include respond (tab-land){
+            margin: 0 auto 5rem;
+        }
+    }
+
+    &__container {
+        display: flex;
+        margin-bottom: 4.8rem;
+        align-items: flex-end;
+    }
+
+    &__title {
+        max-width: 70.5rem;
+        margin-right: auto;
+        text-align: left;
+    }
+
+}

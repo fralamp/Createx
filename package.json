@@ -1,0 +1,24 @@
+{
+  "name": "creat-nw",
+  "version": "1.0.0",
+  "description": "createx ",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass src/index.pug src/css/sass/main.scss src/css/style.css -w",
+    "start": "parcel watch:sass src/index.pug -d --open ",
+    "build": "parcel build src/index.pug --public-url ./"
+  },
+  "author": "fralamp",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "node-sass": "^7.0.1",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.53.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "keywords": []
+}

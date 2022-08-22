@@ -1,0 +1,112 @@
+.article-av-positions{
+    background: #F4F5F6 url(../../../img/bg-13.png) bottom 0rem right 0rem no-repeat;
+    background-size: 102.4rem;
+    padding-top: 15rem;
+    padding-bottom: 14.5rem;
+    margin-bottom: 12rem;
+    position: relative;
+
+    @include respond (tab-land){
+        padding-bottom: 7rem;
+        margin-bottom: 6rem;
+    }
+}
+
+.av-positions{
+    
+    &__actually {
+        margin-right: auto;
+    }
+
+    &__card {
+        max-width: 70.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3.2rem 4rem;
+        background-color: $color-primary;
+        border: 1px solid #E5E8ED;
+        border-radius: 4px;
+        transition: box-shadow .3s linear;
+        margin-bottom: 2.4rem;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 
+            0px 30px 24px -10px rgba(154, 156, 165, 0.05), 
+            0px 12px 10px -6px rgba(154, 156, 165, 0.04), 
+            0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        }
+    }
+
+    &__block-info {
+        margin-right: 1rem;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-bottom: .8rem;
+    }
+
+    &__details {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+            padding-left: 1.2rem;
+
+            &::before {
+                display: block;
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 0;
+                z-index: 3;
+                transform: translateY(-50%);
+                background-color: $color-text-fourth;
+
+                width: 1px;
+                height: 75%;
+
+            }
+        }
+
+        img {
+            margin-right: 0.8rem;
+        }
+
+        span {
+            font-size: 1.4rem;
+            margin-right: 1.2rem;
+
+        }
+    }
+        
+    &__position{
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-text-primary;
+    }
+
+    &__search {
+        max-width: 39rem;
+    }
+
+    &__inner-title {
+        font-size: 2.8rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__inner-subtitle {
+        font-size: 1.8rem;
+        color: $color-text-primary;
+        margin-bottom: 4.8rem;
+    }
+
+    &__btn-section {
+        display: flex;
+        justify-content: space-between;
+    }
+}

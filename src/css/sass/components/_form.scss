@@ -1,0 +1,584 @@
+.form-q{
+    display: flex;
+    align-items: flex-end;
+    
+    &__title {
+        text-align: center;
+        margin-bottom: 3.2rem;
+        font-size: 2.8rem;
+    }
+
+    &__label{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2.4rem;
+        flex: 1;
+
+        &:nth-child(3){
+            flex: 1.3;
+        }
+
+        & span {
+            color: #424551;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+        }   
+
+    }
+
+    &__input {
+        border-radius: 4px;
+        border: 1px solid #D7DADD;
+        background: #F4F5F7;
+        font-size: 1.4rem;
+        font-family: inherit;
+        color: $color-text-primary;
+        padding: .7rem;
+
+        &::placeholder{
+            color: $color-text-fourth;
+            padding: .7rem;
+        }
+    }
+
+    &__btn {
+        padding: 0  3.2rem;
+        border-radius: 4px;
+        background-color: $color-secondary;
+        color: $color-text-secondary;
+        font-size: 1.4rem;
+        line-height: 3;
+        font-weight: 700;
+        font-family: inherit;
+        border: none;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover,
+        &:focus {
+        background-color: #ff5a30b3;
+        }
+    }
+}
+
+.form-global {
+
+    &__title {
+        font-size: 2.8rem;
+        margin-bottom: 2.4rem;
+        text-align: center;
+    }
+
+    &__block-agreement{
+        display: flex;
+        align-items: center;
+    }
+
+    &__label {
+        font-family: inherit;
+        font-size: 1.4rem;
+        width: 100%;
+
+        &--checkbox {
+            user-select: none;
+            display: inline-flex;
+            font-size: $default-size-text;
+            
+            &::before {
+                content: "";
+                width: 100%;
+                height: 1.7rem;
+                max-width: 1.7rem;
+
+                display: inline-flex;
+                border: 1px $color-fourth solid;
+                background-repeat: no-repeat;
+                background-position: center center;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        &:checked + .form-global__label--checkbox::before {
+            border-color: $color-secondary;
+            background-color: $color-secondary;
+            background-image: url(../../../img/svg/checkbox.svg);
+
+        }
+
+        &:disabled + .form-global__label--checkbox::before {
+            background-color: $color-primary;
+            color: #aaa;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        font-size: 1.8rem;
+        background-color:  #F4F5F7;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        padding: .7rem ;
+        margin-bottom: 2rem;
+
+        &::placeholder {
+            font-size: 1.6rem;
+            font-family: inherit;
+            padding: .7rem;
+        }
+    }
+
+    &__btn {
+        display: block;
+        text-align: center;
+        margin: 2.4rem auto 0;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 3.2;
+        color:$color-text-secondary;
+        background-color: $color-secondary;
+        border-radius: 4px;
+        border: none;
+        padding: 0 3.2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover,
+        &:focus {
+        background-color: #ff5a30b3;
+        }
+    }
+    
+}
+
+.form-mail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.8rem;
+
+    &__title {
+        font-size: 2.4rem;
+        color: $color-text-secondary;
+        margin-bottom: 2.4rem;
+    }
+
+    &__input  {
+        background-color: #ffffff1f;
+        border: 1px solid #ffffff33;
+        border-radius: 4px 0 0 4px;
+        font-size: 1.4rem;
+        color: $color-text-secondary;
+        padding: 1.2rem;
+        font-family: inherit;
+        width: 100%;
+
+        &::placeholder {
+            font-family: inherit;
+            color: $color-text-footer;
+            font-size: 1.6rem;
+            padding: .5rem;
+        }
+    }
+
+    &__btn {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 3;
+        color: $color-text-secondary;
+        padding: 0 2.5rem;
+        background-color: $color-secondary;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all .3s;
+
+        &__info {
+        color: $color-text-footer;
+        font-size: 1.2rem;
+        }
+
+        &:hover,
+        &:focus {
+        background-color: #ff5a30b3;
+        }
+    }
+}
+
+.form-position{
+
+    &__control {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        color: #424551;
+        margin-bottom: 0.8rem;
+    }
+
+    &__input{
+        background-color: #F4F5F7;
+        border: 1px solid #ffffff33;
+        border-radius: 4px;
+        font-size: $default-size-text;
+        color: $color-text-primary;
+        padding: .7rem;
+        font-family: inherit;
+        width: 100%;
+
+        &::placeholder {
+            font-family: inherit;
+            color: #9A9CA5;
+            font-size: inherit;
+            padding: .7rem;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    &__textarea {
+        resize: none;
+        background-color: #F4F5F7;
+        border: 1px solid #ffffff33;
+        border-radius: 4px;
+        padding: .7rem;
+        font-size: $default-size-text;
+        color: $color-text-primary;
+        font-family: inherit;
+        margin-bottom: 2rem;
+
+        &::placeholder {
+            font-family: inherit;
+            color: #9A9CA5;
+            font-size: inherit;
+            padding: .7rem;
+        }
+    }
+
+    &__upload {
+        display: none;
+    }
+
+    &__label-upload {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        color: #424551;
+        cursor: pointer;
+        width: 100%;
+
+        img {
+            margin-right: 1.2rem;
+        }
+    }
+
+}
+
+.form-comments {
+
+    &__info {
+        display: flex;
+        column-gap: 3rem;
+        margin-bottom: 2.2rem;
+    }
+    &__label {
+        font-size: $default-size-text;
+        color: #424551;
+        margin-bottom: 0.8rem;
+        width: 100%;
+    }
+
+    &__input{
+        margin-top: 0.8rem;
+        background-color: #F4F5F7;
+        border: 1px solid #ffffff33;
+        border-radius: 4px;
+        font-size: inherit;
+        color: $color-text-primary;
+        font-family: inherit;
+        width: 100%;
+        padding: .7rem;
+
+        &::placeholder {
+            font-family: inherit;
+            color: inherit;
+            font-size: inherit;
+            padding: .7rem;
+        }
+    }
+
+    &__textarea {
+        margin-top: 0.8rem;
+        resize: none;
+        background-color: #F4F5F7;
+        border: 1px solid #ffffff33;
+        border-radius: 4px;
+        font-size: $default-size-text;
+        color: $color-text-primary;
+        font-family: inherit;
+        margin-bottom: 2rem;
+        width: 100%;
+        padding: .7rem;
+
+        &::placeholder {
+            font-family: inherit;
+            color: inherit;
+            font-size: inherit;
+            padding: .7rem;
+        }
+    }
+
+    &__btn {
+        display: block;
+        text-align: center;
+        margin: 2.4rem auto 0;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 3.2;
+        color:$color-text-secondary;
+        background-color: $color-secondary;
+        border-radius: 4px;
+        border: none;
+        padding: 0 3.2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover,
+        &:focus {
+        background-color: #ff5a30b3;
+        }
+    }
+
+}
+
+.form-contacts {
+    max-width: 60rem;
+
+    &__controls {
+        display: flex;
+        column-gap: 3rem;
+        margin-bottom: 2.4rem;
+
+        &--radio {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1.2rem 0;
+            margin-top: auto;
+        }
+
+        input.rad {
+            margin-right: 1.2rem;
+            cursor: pointer;
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+
+            &:checked + .form-contacts__label--radio:before {
+                border: 1px solid $color-secondary;
+    
+            }
+    
+            &:disabled + .form-contacts__label--radio:before {
+                background-color: $color-primary;
+                color: $color-primary;
+            }
+
+            &:checked + .form-contacts__label--radio::after {
+                background-color: $color-secondary;
+    
+            }
+    
+            &:disabled + .form-contacts__label--radio::after {
+                background-color: transparent;
+            }
+        }
+    }
+
+    &__label {
+        font-size: $default-size-text;
+        color: #424551;
+        max-width: 28.5rem;
+        width: 100%;
+        font-weight: 400;
+
+        &--mini {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--radio {
+            cursor: pointer;
+            position: relative;
+            padding-left: 2.5rem;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 1.6rem;
+                height: 1.6rem;
+                display: inline-block;
+                border: 1px solid #B3B7BC;
+                cursor: pointer;
+                top: 50%;
+                left: 0;
+                border-radius: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+            }
+            
+            &::after{
+                content: "";
+                position: absolute;
+                display: inline-block;
+
+                top: 50%;
+                left: 3px;
+                z-index: 3;
+                transform: translateY(-50%);
+
+                border-radius: 50%;
+                width: 1rem;
+                height: 1rem;
+                cursor: pointer;
+
+                @include respond (tab-port){
+                    left: 2px;
+                }
+            }
+
+        }
+
+        &--checkbox {
+            user-select: none;
+            display: inline-flex;
+            font-size: $default-size-text;
+            
+            &::before {
+                content: "";
+                width: 100%;
+                height: 1.6rem;
+                max-width: 1.6rem;
+
+                display: inline-flex;
+                border: 1px $color-fourth solid;
+                background-repeat: no-repeat;
+                background-position: center center;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-right: 1rem;
+            }
+        }
+             
+    }
+
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        &:checked + .form-contacts__label--checkbox:before {
+            border-color: $color-secondary;
+            background-color: $color-secondary;
+            background-image: url(../../../img/svg/checkbox.svg);
+
+        }
+
+        &:disabled + label:before {
+            background-color: $color-primary;
+            color: #aaa;
+        }
+    }
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        color: #424551;
+
+        margin-top: 0.8rem;
+        width: 100%;
+
+        background-color: #F4F5F7;
+        border: 1px solid #ffffff33;
+        border-radius: 4px;
+        padding: .7rem;
+
+        &::placeholder {
+            font-family: inherit;
+            color: #9A9CA5;
+            font-size: inherit;
+            padding: .7rem;
+        }
+
+    }
+
+    &__textarea {
+        margin-top: 0.8rem;
+        resize: none;
+        background-color: #F4F5F7;
+        border: 1px solid #ffffff33;
+        border-radius: 4px;
+        padding: .7rem;
+        font-size: $default-size-text;
+        color: $color-text-primary;
+        font-family: inherit;
+        margin-bottom: 4rem;
+        width: 100%;
+
+        &::placeholder{
+            font-family: inherit;
+            color: #9A9CA5;
+            padding: .7rem;
+        }
+    }
+
+    &__agreement{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 7.5rem;
+    }
+
+    &__btn {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 3.2;
+        color:$color-text-secondary;
+        background-color: $color-secondary;
+        border-radius: 4px;
+        border: none;
+        padding: 0 4.25rem;
+        font-weight: 700;
+        letter-spacing: .5px;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover,
+        &:focus {
+        background-color: #ff5a30b3;
+        } 
+    }
+
+}

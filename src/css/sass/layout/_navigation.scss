@@ -1,0 +1,129 @@
+.navigation{ 
+    max-width: 123rem;
+    display: flex;
+    margin: 2.2rem auto 2rem;
+    padding: 0 1.5rem;
+    align-items: center;
+
+    &__nav {
+        display: flex;
+        margin-right: auto;
+
+        @include respond (tab-land){
+            display: none;
+        }
+    }
+
+    &__list {
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: $default-size-text;
+        line-height: 1.6;
+        color: #424551;
+        font-family: 'Ubuntu', sans-serif;
+        transition: all .3s ease;
+
+        &:hover,
+        &:focus {
+            color: $color-text-tertiary;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        margin-left: auto;
+    }
+
+    &__inner-block{
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-right: 3.6rem;
+        }
+    }
+
+    &__contact-icon{
+        margin-right: 1.2rem;
+        width: 4rem;
+        height: 4rem;
+        fill: $color-text-tertiary;
+    }
+
+    &__text {
+        display: block;
+        margin: 0;
+        color: #424551;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    &__inner-link {
+        color: $color-text-primary;
+        font-size: 1.8rem;
+        line-height: 1.6;
+        font-family: inherit;
+        transition: all .3s ease;
+
+        &:hover,
+        &:focus {
+            color: $color-text-tertiary;
+        }
+    }
+
+}
+
+.mobile-nav{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(83, 86, 94, 0.8);
+    top: 9.2rem;
+
+    &__nav {
+        background-color: $color-primary;
+        height: 100vh;
+        width: 20rem;
+    }
+
+    &__list {
+        padding: 1.5rem 1.5rem 1.5rem 2rem;
+        position: relative;
+
+        border-bottom: 1px solid $color-fourth;
+        
+        &:first-child{
+            border-top: 1px solid $color-fourth;
+        }
+
+    }
+
+    &__link {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: $default-size-text;
+        line-height: 1.6;
+        color: #424551;
+        font-family: 'Ubuntu', sans-serif;
+        transition: all .3s ease;
+
+        &:hover,
+        &:focus {
+            color: $color-text-tertiary;
+        }
+    }
+
+}
+
+
+.open {
+    display: block;
+}

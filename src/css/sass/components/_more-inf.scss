@@ -1,0 +1,13 @@
+.more-inf{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+    &__text{
+        margin-right: 4rem;
+        font-weight: 700;
+        font-size: 2.8rem;
+        color: $color-text-primary;
+    }
+}
+

@@ -1,0 +1,229 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./css/sass/main.scss')
+  title AVAILABLE POSITIONS
+body
+  include ./partion/header
+  main.main
+    article.article-av-positions
+        .container
+            ul.breadcrumbs
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="index.pug") 
+                        |Homepage
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="about-us.pug") 
+                        |About Us
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="av-positions.pug") 
+                        |Available Positions
+            h1.title
+                |AVAILABLE POSITIONS
+            p.subtitle
+                |Build your career with Createx Construction Bureau.
+    section.av-positions
+        article.container.flex.mb-18 
+            .av-positions__actually 
+                .av-positions__card 
+                    .av-positions__block-info 
+                        .av-positions__info
+                            .av-positions__details                        
+                                img(src="../img/svg/map.svg", alt="map icon")
+                                span 
+                                    |New York
+                            .av-positions__details 
+                                img.av-positions__icon(src="../img/svg/clock.svg", alt="clock icon")
+                                span 
+                                    |Full Time 
+                        .av-positions__position 
+                            span 
+                                |Heavy Equipment Operator
+                    a.btn-link.btn-link--transparent(href='#')
+                        | Apply now                   
+                .av-positions__card 
+                    .av-positions__block-info 
+                        .av-positions__info
+                            .av-positions__details                        
+                                img(src="../img/svg/map.svg", alt="map icon")
+                                span 
+                                    |San Francisco
+                            .av-positions__details 
+                                img.av-positions__icon(src="../img/svg/clock.svg", alt="clock icon")
+                                span 
+                                    |Full Time 
+                        .av-positions__position 
+                            span 
+                                |Financial Compliance Analyst
+                    a.btn-link.btn-link--transparent(href='#')
+                        | Apply now                   
+                .av-positions__card 
+                    .av-positions__block-info 
+                        .av-positions__info
+                            .av-positions__details                        
+                                img(src="../img/svg/map.svg", alt="map icon")
+                                span 
+                                    |New Jersey
+                            .av-positions__details 
+                                img.av-positions__icon(src="../img/svg/clock.svg", alt="clock icon")
+                                span 
+                                    |Full Time 
+                        .av-positions__position 
+                            span 
+                                |Project Manager - Buildings
+                    a.btn-link.btn-link--transparent(href='#')
+                        | Apply now                   
+                .av-positions__card 
+                    .av-positions__block-info 
+                        .av-positions__info
+                            .av-positions__details                        
+                                img(src="../img/svg/map.svg", alt="map icon")
+                                span 
+                                    |New York
+                            .av-positions__details 
+                                img.av-positions__icon(src="../img/svg/clock.svg", alt="clock icon")
+                                span 
+                                    |Full Time 
+                        .av-positions__position 
+                            span 
+                                |Environment Specialist
+                    a.btn-link.btn-link--transparent(href='#')
+                        | Apply now                   
+                .av-positions__card 
+                    .av-positions__block-info 
+                        .av-positions__info
+                            .av-positions__details                        
+                                img(src="../img/svg/map.svg", alt="map icon")
+                                span 
+                                    |New York
+                            .av-positions__details 
+                                img.av-positions__icon(src="../img/svg/clock.svg", alt="clock icon")
+                                span 
+                                    |Full Time 
+                        .av-positions__position 
+                            span 
+                                |Accountant
+                    a.btn-link.btn-link--transparent(href='#')
+                        | Apply now                   
+            .av-positions__search 
+                h4.av-positions__inner-title 
+                    |Didn&rsquo;t find what you were looking for?
+                p.av-positions__inner-subtitle 
+                    |Send your CV&nbsp;or subscribe to&nbsp;our newsletter to&nbsp;receive information about new vacancies.
+                .av-positions__btn-section 
+                    button.btn.btn--transparent(type='button' data-modal='modal-subscribe')
+                        |subscribe             
+                    button.btn(type='button' data-modal='modal-cv')
+                        |send cv   
+        article.container.mb-18 
+            .our-values
+                h2.our-values__title
+                    | Employee benefits
+                p.our-values__subtitle
+                    | There&rsquo;s always room for talent.
+                .our-values__cards
+                    .our-values__card
+                        img(src="../img/svg/benefits/brain.svg", alt="training icon")
+                        span.our-values__inner-title
+                            | Training
+                        p.our-values__inner-subtitle
+                            | Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+                    .our-values__card.our-values__card--central
+                        img(src="../img/svg/benefits/growth.svg", alt="Professional Growth icon")
+                        span.our-values__inner-title
+                            | Professional Growth
+                        p.our-values__inner-subtitle
+                            | Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
+                    .our-values__card
+                        img(src="../img/svg/benefits/budjet.svg", alt="Growing Salary icon")
+                        span.our-values__inner-title
+                            | Growing Salary
+                        p.our-values__inner-subtitle
+                            | Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.                  
+    
+    #modal-subscribe.modal
+        .modal__content.modal-content--subscribe
+            h4.modal__title
+                |Subscribe to our newsletter
+            button.modal__close(type='button')
+                img(src="../img/svg/close.svg", alt="close button icon")
+            form#subscribe-form.form-position(action='/' name='subscribe-form' method='post')
+                .form-position__control 
+                    label.form-position__label(for='name')
+                        | Name*
+                    input.form-position__input(type='text' name='name' placeholder='Your name' required)
+                    label.form-position__label(for='email' required)
+                        | Email*
+                    input.form-position__input(type='email' name='email' placeholder='Your working email')    
+                button.btn.btn--form(type='submit' form='subscribe-form')
+                    | send 
+
+    #modal-cv.modal
+        .modal__content.modal-content--cv
+            h4.modal__title
+                |Send your CV
+            button.modal__close(type='button')
+                img(src="../img/svg/close.svg", alt="close button icon")
+            form#cv-form.form-position(action='/' name='subscribe-form' method='post')
+                .form-position__control 
+                    label.form-position__label(for='name')
+                        | Name*
+                    input.form-position__input(type='text' name='name' placeholder='Your name' required)
+                    label.form-position__label(for='cities')
+                        | Location*
+                    input.form-position__input(type='text' name='cities' placeholder='Choose your location' list='cities' required)
+                    datalist#cities.form-position__datalis 
+                        option(value="New York") 
+                        option(value="Los Angeles") 
+                        option(value="San Francisco")
+                        option(value="Washington")
+                    label.form-global__label(for='telephone')
+                        | Phone*
+                    input.form-global__input(type='tel' name='telephone' placeholder='Your phone number' required)                    
+                    label.form-position__label(for='email')
+                        | Email*
+                    input.form-position__input(type='email' name='email' placeholder='Your working email' autocomplete="off" required)  
+                    label.form-position__label(for='cov-letter')
+                        | Сovering letter
+                    textarea#cov-letter.form-position__textarea(name="cov-letter", cols="30", rows="4" placeholder='Your covering letter') 
+                    input#upload.form-position__upload(type="file" name='file')
+                    label.form-position__label-upload(for="upload") 
+                        img(src="../img/svg/attach.svg", alt="attach icon")
+                        span
+                            |Attach your CV*
+                button.btn.btn--form(type='submit' form='cv-form')
+                    | send 
+
+     
+    article.article-global-form
+      .container
+        .content.content--form
+          form#global-form.form-global(action='#' method='post' name='form-global')
+            h3.form-global__title
+              | A quick way to discuss details
+            label.form-global__label(for='name')
+              | Name*
+              input.form-global__input(type='text' name='name' placeholder='Your name' required='')
+            label.form-global__label(for='telephone')
+              | Phone*
+              input.form-global__input(type='tel' name='telephone' placeholder='Your phone number' required='')
+            label.form-global__label(for='email')
+              | Email
+              input.form-global__input(type='email' name='email' placeholder='Your working email')
+            label.form-global__label(for='email')
+              | Message*
+              input.form-global__input(type='text' name='Message' placeholder='Your message' required='')
+            .form-global__block-agreement
+              input#checkbox-inf.form-global__checkbox(type='checkbox' required='')
+              label.form-global__label.form-global__label--checkbox(for='checkbox-inf')
+                | I agree to receive communications from Createx Construction Bureau.
+            button.form-global__btn(type='submit' form='global-form')
+              | send request
+  include ./partion/footer
+  script(src="js/modal.js"  defer="defer")

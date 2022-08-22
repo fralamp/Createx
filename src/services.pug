@@ -1,0 +1,96 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./css/sass/main.scss')
+  title SERVICE
+body
+  include ./partion/header
+  main.main
+    section.section-services
+        .services 
+            .container
+                ul.breadcrumbs
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="index.pug") 
+                            |Homepage
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="services.pug") 
+                            |Services
+                h1.services__title
+                    |Services
+                p.services__subtitle
+                    |If&nbsp;you are looking for a&nbsp;full-service construction company, look to&nbsp;Createx Construction Bureau. We&nbsp;are doing our best to&nbsp;be&nbsp;a&nbsp;partner for all of&nbsp;your construction needs.
+        .container
+            .services__content
+                img.services__img(src='../img/services/services-1.jpg' alt='photo Construction')
+                .services__text.services__text--reverse
+                    h3.services__inner-title
+                        |Construction 
+                    p.services__inner-paragraph 
+                        |Sapien, feugiat faucibus orci arcu, vulputate. Tristique varius consectetur vulputate arcu, scelerisque nisi, nibh. Enim semper id sodales ultricies sed ut ut augue. Mattis habitant venenatis, gravida posuere massa ac interdum. Eget aliquam dignissim ut vestibulum. 
+                    a.btn-link.btn-link--transparent(href='more-service.pug')
+                        | Learn more
+        .container.container--services
+            .services__content
+                .services__text
+                    h3.services__inner-title
+                        |Project Development
+                    p.services__inner-paragraph
+                        |Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget. 
+                    a.btn-link.btn-link--transparent(href='more-service.pug')
+                        | Learn more
+                img.services__img(src='../img/services/services-2.jpg' alt='photo Construction')
+        .container 
+            .services__content
+                img.services__img(src='../img/services/services-3.jpg' alt='photo Construction')
+                .services__text.services__text--reverse
+                    h3.services__inner-title
+                        |Interior Design
+                    p.services__inner-paragraph
+                        |Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida. Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus faucibus eget elementum pretium. 
+                    a.btn-link.btn-link--transparent(href='more-service.pug')
+                        | Learn more
+                
+        .container.container--services-2
+            .services__content
+                .services__text
+                    h3.services__inner-title
+                        |Repairs
+                    p.services__inner-paragraph
+                        |Facilisis cursus feugiat sit pulvinar amet. Ac facilisi dictum commodo, tortor gravida pretium, orci. Nunc sit sollicitudin id egestas mattis. Turpis viverra nec urna ultrices urna. 
+                    a.btn-link.btn-link--transparent(href='more-service.pug')
+                        | Learn more
+                img.services__img(src='../img/services/services-4.jpg' alt='photo Construction')
+                      
+
+    article.article-global-form
+      .container
+        .content.content--form
+          form#global-form.form-global(action='#' method='post' name='form-global')
+            h3.form-global__title
+              | A quick way to discuss details
+            label.form-global__label(for='name')
+              | Name*
+              input.form-global__input(type='text' name='name' placeholder='Your name' required='')
+            label.form-global__label(for='telephone')
+              | Phone*
+              input.form-global__input(type='tel' name='telephone' placeholder='Your phone number' required='')
+            label.form-global__label(for='email')
+              | Email
+              input.form-global__input(type='email' name='email' placeholder='Your working email')
+            label.form-global__label(for='email')
+              | Message*
+              input.form-global__input(type='text' name='Message' placeholder='Your message' required='')
+            .form-global__block-agreement
+              input#checkbox-inf.form-global__checkbox(type='checkbox' required='')
+              label.form-global__label.form-global__label--checkbox(for='checkbox-inf')
+                | I agree to receive communications from Createx Construction Bureau.
+            button.form-global__btn(type='submit' form='global-form')
+              | send request
+  include ./partion/footer

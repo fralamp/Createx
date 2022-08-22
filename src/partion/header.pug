@@ -1,0 +1,59 @@
+header#top.header 
+  #mobile-nav.mobile-nav 
+    ul.mobile-nav__nav
+      li.mobile-nav__list
+        a.mobile-nav__link(href='about-us.pug')
+          | About&nbsp;Us
+      li.mobile-nav__list
+        a.mobile-nav__link(href='services.pug')
+          | Services
+      li.mobile-nav__list
+        a.mobile-nav__link(href='work.pug')
+          | Work
+      li.mobile-nav__list
+        a.mobile-nav__link(href='news.pug')
+          | News
+      li.mobile-nav__list
+        a.mobile-nav__link(href='contacts.pug')
+          | Contacts
+
+  nav.navigation
+    button#sidebarToggle.burger.active(type='button')
+      span  
+    .logo-box
+      a.logo-box__link(href='index.pug')
+        img.logo-box__img(src='../img/svg/logo.svg' alt='link to home page')
+    ul.navigation__nav
+      li.navigation__list
+        a.navigation__link(href='about-us.pug')
+          | About&nbsp;Us
+      li.navigation__list
+        a.navigation__link(href='services.pug')
+          | Services
+      li.navigation__list
+        a.navigation__link(href='work.pug')
+          | Work
+      li.navigation__list
+        a.navigation__link(href='news.pug')
+          | News
+      li.navigation__list
+        a.navigation__link(href='contacts.pug')
+          | Contacts
+    .navigation__contact
+      .navigation__inner-block
+        svg.navigation__contact-icon
+          use(xlink:href='../img/svg/sprite2.svg#icon-iPhone')
+        .navigation__contact-text
+          span.navigation__text
+            | Call&nbsp;us
+          a.navigation__inner-link(href='tel:+74055550128')
+            | (405) 555-0128
+      .navigation__inner-block
+        svg.navigation__contact-icon
+          use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+        .navigation__contact-text
+          span.navigation__text
+            | Talk&nbsp;to&nbsp;us
+          a.navigation__inner-link(href='mailto:hello@createx.com')
+            | hello@createx.com
+    // contacts end

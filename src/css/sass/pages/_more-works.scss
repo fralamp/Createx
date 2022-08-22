@@ -1,0 +1,113 @@
+.more-works {
+    padding-top: 15.2rem;
+    background: #fff url(../../../img/bg-11.png) top 10rem right -5rem no-repeat;
+
+    &__title {
+        letter-spacing: 1px;
+        margin-bottom: 6rem;
+        margin-top: 4rem;
+        text-align: left;
+    }
+
+    &__album {
+        position: relative;
+        border-radius: 4px;
+    }
+
+    &__img-top {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__album-mini {
+        display: flex;
+        max-width: 10rem;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-right: 2rem;
+        cursor: pointer;
+
+        &:not(:first-child){
+            opacity: 0.6;
+        }
+    }
+
+    &__container {
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        max-width: 126rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12rem;
+
+        @include respond (tab-land){
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__text-info {
+        max-width: 60rem;
+        margin-right: 1rem;
+    }
+
+    &__inner-title {
+        text-align-last: left;
+        margin-bottom: 4rem;
+    }
+
+    &__inner-paragraph {
+        font-size: 1.8rem;
+        color:  #424551;
+
+        &:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__table {
+        display: grid;
+        max-width: 49.5rem;
+        grid-column-gap: 3.2rem;
+        grid-row-gap: 1.6rem;
+        grid-template-columns: max-content max-content;
+
+        padding: 4rem 6rem;
+        background: $color-primary;
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05), 
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04), 
+        0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+
+        thead,
+        tbody,
+        tr {
+            display: contents; 
+            font-size: $default-size-text;
+            text-align: left;
+        }
+
+        th {
+            font-weight: 400;
+            color: $color-text-fourth;
+        }
+
+        .more-works__table-row  {
+            font-weight: 700;
+            color: $color-text-primary;
+        }
+
+    }
+
+}

@@ -1,0 +1,212 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./css/sass/main.scss')
+  title NEWS
+body
+  include ./partion/header
+  main.main
+    article.section-news-page
+            .container
+                ul.breadcrumbs
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="index.pug") 
+                            |Homepage
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="news.pug") 
+                            |News
+                h1.title
+                    |NEWS
+                p.subtitle
+                    |Stay tuned with our news, expert tips and articles.              
+    section.news-page      
+        .container 
+            h2.news-page__title
+                |Categories
+            ul.news-page__categories 
+                li.news-page__item
+                    a(href="#")
+                        | All News
+                li.news-page__item
+                    a(href="#")
+                        | Company News
+                li.news-page__item
+                    a(href="#")
+                        | Innovation
+                li.news-page__item
+                    a(href="#")
+                        | Industry News
+                li.news-page__item
+                    a(href="#")
+                        | Expert Tips
+                li.news-page__item
+                    a(href="#")
+                        | Marketing
+        .container
+            .news-page__block-news
+                .news-page__card-news 
+                    a(href="more-news.pug") 
+                        img.news-page__img(src='../img/news/news-4.jpg' alt='news photo')
+                    .news__text    
+                        h4.news__inner-title
+                            a.news__link-post(href='more-news.pug')
+                                | How to Build Climate Change-Resilient Infrastructure
+                        .news__inner-info
+                            span.news__type
+                                | Industry News
+                            span.news__date
+                                | June 24, 2020
+                            a.news__link-comments(href='more-news.pug')
+                                svg.news__comments-icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                span.news__qty-comments
+                                    | 4 comments
+                        p.news__paragraph
+                            |Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...                    
+                .news-page__card-news 
+                    a(href="more-news.pug") 
+                        img.news-page__img(src='../img/news/news-5.jpg' alt='news photo')
+                    .news__text    
+                        h4.news__inner-title
+                            a.news__link-post(href='more-news.pug')
+                                | How Construction Can Help Itself
+                        .news__inner-info
+                            span.news__type
+                                | Innovation
+                            span.news__date
+                                | June 12, 2020
+                            a.news__link-comments(href='more-news.pug')
+                                svg.news__comments-icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                span.news__qty-comments
+                                    | No comments
+                        p.news__paragraph
+                            |Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat vitae scelerisque. Rhoncus augue faucibus maecenas lacus...                  
+                .news-page__card-news 
+                    a(href="more-news.pug") 
+                        img.news-page__img(src='../img/news/news-6.jpg' alt='news photo')
+                    .news__text    
+                        h4.news__inner-title
+                            a.news__link-post(href='more-news.pug')
+                                | The Difference Between a&nbsp;Digger and an&nbsp;Excavator
+                        .news__inner-info
+                            span.news__type
+                                | Expert Tips
+                            span.news__date
+                                | May 16, 2020
+                            a.news__link-comments(href='more-news.pug')
+                                svg.news__comments-icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                span.news__qty-comments
+                                    | No comments
+                        p.news__paragraph
+                            |Cras est nisi purus velit facilisi vitae, dolor. Lorem scelerisque integer duis et nulla lobortis cursus. Viverra erat sollicitudin praesent viverra...                    
+                .news-page__card-news 
+                    a(href="more-news.pug") 
+                        img.news-page__img(src='../img/news/news-7.jpg' alt='news photo')
+                    .news__text    
+                        h4.news__inner-title
+                            a.news__link-post(href='more-news.pug')
+                                | Building Construction Hand Tools
+                        .news__inner-info
+                            span.news__type
+                                | Expert Tips
+                            span.news__date
+                                | February 25, 2020
+                            a.news__link-comments(href='more-news.pug')
+                                svg.news__comments-icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                span.news__qty-comments
+                                    | 1 comments
+                        p.news__paragraph
+                            |Tellus quis aliquet volutpat nunc pulvinar donec sed sapien. Vitae elit id dolor, tristique massa. Fames lobortis orci rutrum bibendum integer...                  
+                .news-page__card-news 
+                    a(href="more-news.pug") 
+                        img.news-page__img(src='../img/news/news-8.jpg' alt='news photo')
+                    .news__text    
+                        h4.news__inner-title
+                            a.news__link-post(href='more-news.pug')
+                                | Top 10 Construction Trends
+                        .news__inner-info
+                            span.news__type
+                                | Industry News
+                            span.news__date
+                                | January 14, 2020
+                            a.news__link-comments(href='more-news.pug')
+                                svg.news__comments-icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                span.news__qty-comments
+                                    | No comments
+                        p.news__paragraph
+                            |Dignissim sed enim, eleifend morbi condimentum. Congue id quis vulputate dignissim eget. Ac ullamcorper nunc habitasse enim interdum platea...                    
+                .news-page__card-news 
+                    a(href="#") 
+                        img.news-page__img(src='../img/news/news-9.jpg' alt='news photo')
+                    .news__text    
+                        h4.news__inner-title
+                            a.news__link-post(href='more-news.pug')
+                                | Types of Flooring Materials
+                        .news__inner-info
+                            span.news__type
+                                | Company News
+                            span.news__date
+                                | December 1, 2019
+                            a.news__link-comments(href='more-news.pug')
+                                svg.news__comments-icon
+                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                span.news__qty-comments
+                                    | No comments
+                        p.news__paragraph
+                            |Maecenas donec lacinia nunc, quam sit magnis mauris. Neque bibendum et mauris, aenean. Vel arcu amet in sem parturient  integer duis et nulla...                 
+            ul.news-page__num-pages
+                li.news-page__item-pages
+                    a.news-page__link-pages(href="#")
+                        |1 
+                li.news-page__item-pages
+                    a.news-page__link-pages(href="#")
+                        |2 
+                li.news-page__item-pages
+                    a.news-page__link-pages(href="#")
+                        |3 
+                li.news-page__item-pages
+                    a.news-page__link-pages(href="#")
+                        |4 
+                li.news-page__item-pages
+                    a.news-page__link-pages(href="#")
+                        |5 
+                li.news-page__item-pages
+                    a.news-page__link-pages(href="#")
+                        svg
+                            use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')
+                
+    article.article-global-form
+      .container
+        .content.content--form
+          form#global-form.form-global(action='#' method='post' name='form-global')
+            h3.form-global__title
+              | A quick way to discuss details
+            label.form-global__label(for='name')
+              | Name*
+              input.form-global__input(type='text' name='name' placeholder='Your name' required='')
+            label.form-global__label(for='telephone')
+              | Phone*
+              input.form-global__input(type='tel' name='telephone' placeholder='Your phone number' required='')
+            label.form-global__label(for='email')
+              | Email
+              input.form-global__input(type='email' name='email' placeholder='Your working email')
+            label.form-global__label(for='email')
+              | Message*
+              input.form-global__input(type='text' name='Message' placeholder='Your message' required='')
+            .form-global__block-agreement
+              input#checkbox-inf.form-global__checkbox(type='checkbox' required='')
+              label.form-global__label.form-global__label--checkbox(for='checkbox-inf')
+                | I agree to receive communications from Createx Construction Bureau.
+            button.form-global__btn(type='submit' form='global-form')
+              | send request
+  include ./partion/footer

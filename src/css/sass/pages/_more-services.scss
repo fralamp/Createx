@@ -1,0 +1,224 @@
+.more-services{
+    background: #F4F5F6 url(../../../img/bg-8.png) top 69% 
+    right -14rem no-repeat;
+    padding-top: 15rem;
+    padding-bottom: 18rem;
+    margin-bottom: 12rem;
+
+    @include respond (tab-land){
+        padding-bottom: 9rem;
+        margin-bottom: 6rem;
+    }
+
+    &__title {
+        margin: 4rem auto 2.4rem 0;
+        max-width: 60rem;
+        text-align: left;
+        line-height: 1.3;
+        letter-spacing: 1px;
+    }
+
+    &__subtitle {
+        max-width: 60rem;
+        
+        color: $color-text-fourth;
+        text-align: left;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 18rem;
+
+        @include respond (tab-land){
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 9rem;
+        }
+    }
+
+    &__top-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 71rem;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 42rem;
+        margin-left: 1.5rem;
+
+        @include respond (tab-land){
+            align-items: center;
+        }
+    }
+
+    &__inner-title {
+        font-weight: 900;
+        margin-bottom: 6rem;
+
+        @include respond (tab-land){
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__inner-title-2 {
+        text-align: left;
+        margin-bottom: 9rem;
+    }
+
+    &__plan {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__plan-card {
+        max-width: 28.5rem;
+        position: relative;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+            border-top: 1px dashed #D7DADD;
+
+            &::after { //закрашиваем часть border'a 
+                position: absolute;
+                content: "";
+                width: 25%;
+                height: 1px;
+                left: 0;
+                top: -1px;
+                background-color: $color-primary;
+
+            }
+        }
+
+        &:focus,
+        &:hover {
+            .more-services__plan-num {
+                color: $color-text-tertiary;
+          
+                &::before{
+                    opacity: .12;
+                }
+
+                &::after {
+                    opacity: .06;
+                }
+            }
+        }
+    }
+
+    &__plan-num {
+        position: absolute;
+        padding: 2.8rem;
+
+        top: -6rem;
+        left: -30px;
+        z-index: 10;
+        color: #D7DADD;
+
+        transition: color .2s linear;
+
+        &::before{
+            width: 8.4rem;
+            height: 8.4rem;
+
+            opacity: 0;
+            z-index: 7;
+        }
+
+        &::after{
+            width: 11.6rem;
+            height: 11.6rem;
+
+            opacity: 0;
+            z-index: 5;
+        }
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+            background-color: $color-secondary;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: opacity .2s linear;
+
+        }
+    }
+
+    &__plan-stage {
+        display: block;
+        margin-bottom: 0.8rem;
+        padding-top: 4.6rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__plan-text {
+        display: block;
+        margin-bottom: 2.6rem;
+        color: $color-text-fourth;
+        font-size: $default-size-text;
+    }
+
+    &__inner-content{
+        background-color: $color-fourth;
+        margin-top: 12rem;
+
+        @include respond (tab-land){
+            margin-top: 6rem;
+        }
+    }
+}
+
+.hidden-text {
+    display: none;
+}
+
+.accordion {
+
+    &__item {
+        margin-bottom: 2.4rem;
+        cursor: pointer;
+
+        &--active .accordion__inner-text{
+            display: block;
+        }
+    }
+
+
+    &__content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        & .accordion__minus-img{
+            display: none;
+        }
+    }
+
+    &__title {
+        margin-left: 2rem;
+        font-size: 2.8rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    &__inner-text {
+        display: none;
+        margin-left: 4.4rem;
+    }
+}

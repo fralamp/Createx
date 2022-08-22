@@ -1,0 +1,88 @@
+footer.footer
+    .footer__container
+      .footer__top
+        .footer__inner-container
+          .footer__social
+            .logo-box
+              a.logo-box__link(href='index.html')
+                img.logo-box__img(src='../img/svg/logo-ft.png' alt='link to home page')
+            a.footer__social-link(href='#' target='_blank')
+              svg.footer__social-icon(aria-label='icon whatsapp')
+                use(xlink:href='../img/svg/sprite1.svg#icon-whatsapp')
+            a.footer__social-link(href='#' target='_blank')
+              svg.footer__social-icon(aria-label='icon messenger')
+                use(xlink:href='../img/svg/sprite1.svg#icon-messenger')
+            a.footer__social-link(href='#' target='_blank')
+              svg.footer__social-icon(aria-label='icon facebook')
+                use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+            a.footer__social-link(href='#' target='_blank')
+              svg.footer__social-icon(aria-label='icon twitter')
+                use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+            a.footer__social-link(href='#' target='_blank')
+              svg.footer__social-icon(aria-label='icon youtube')
+                use(xlink:href='../img/svg/sprite1.svg#icon-youtube')
+          p.footer__text
+            | Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
+        .footer__inner-container
+          h4.form-mail__title
+            | Let&rsquo;s stay in&nbsp;touch
+          form.form-mail(action='#' method='post')
+            input.form-mail__input(type='email' name='email' required='' placeholder='Your email address ')
+            button.form-mail__btn(type='submit')
+              | subscribe
+          p.form-mail__info
+            | *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
+      // footer__top end
+      .footer__middle
+        .footer__place-info
+          h4.footer__inner-title
+            | HEAD OFFICE
+          .footer__contacts
+            span Address:
+            address 8502 Preston Rd. Inglewood, New York
+          .footer__contacts
+            span Call:
+            a(href='tel:+74055550128') (405) 555-0128
+          .footer__contacts
+            span Email:
+            a(href='mailto:hello@createx.com') hello@createx.com
+        .footer__nav.footer__nav--first
+          h4.footer__inner-title
+            | WHO WE&nbsp;ARE
+          ul.footer__list
+            li.footer__item
+              a.footer__link(href='about-us.pug')
+                | About&nbsp;Us
+            li.footer__item
+              a.footer__link(href='av-positions.pug')
+                | Available Positions
+            li.footer__item
+              a.footer__link(href='contacts.pug')
+                | Contacts
+        .footer__nav
+          h4.footer__inner-title
+            | OUR EXPERIENCE
+          ul.footer__list
+            li.footer__item
+              a.footer__link(href='services.pug')
+                | Services
+            li.footer__item
+              a.footer__link(href='work.pug')
+                | Work
+            li.footer__item
+              a.footer__link(href='news.pug')
+                | News
+      // footer__middle end
+      .footer__bottom
+        .footer__reserved
+          span
+            | &copy;&nbsp;All rights reserved. Made with
+            svg
+              use(xlink:href='../img/svg/sprite1.svg#icon-heart')
+            |                         by Createx Studio
+        .footer__anchor
+          span GO TO TOP
+          a.btn-link.btn-link--anchor(href='#top')
+            svg
+              use(xlink:href='../img/svg/sprite1.svg#icon-arrow_up')
+script(src="./js/mobileNav.js"  defer="defer")
