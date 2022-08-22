@@ -1,0 +1,366 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='./css/sass/main.scss')
+  title CREATEX CONSTRUCTION
+body
+  include ./partion/header
+  section.section-hero
+    button.arrow.arrow--hero(href='#')
+      svg.arrow__pic
+        use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')
+    .hero
+      h1.hero__title
+        | CREATE  
+        span X
+        |  CONSTRUCTION
+      p.hero__subtitle
+        | Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
+      .hero__btn
+        a.hero__link-learn-more(href='about-us.pug')
+          | Learn more about&nbsp;us
+        a.btn-link(href='#')
+          | SUBMIT REQUEST
+      .hero__slider
+        span.hero__num-slide 01
+        span.hero__num-slide 02
+        span.hero__num-slide 03
+        span.hero__num-slide 04
+    button.arrow.arrow--hero(href='#')
+      svg.arrow__pic
+        use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')
+  main.main
+    section.section-constraction
+      .constraction
+        h2.constraction__title
+          | We&nbsp;are Createx Construction Bureau
+        p.constraction__subtitle
+          | We&nbsp;are rightfully considered to&nbsp;be&nbsp;the best construction company in&nbsp;the USA.
+        .video__block
+          video#video-hero.video(loop='' muted='')
+            source(src='./video/building.mp4' type='video/mp4')
+          #video-controls.video__controls 
+            img#playpause.video__paused(src="../img/svg/play.svg", alt="btn play")
+          img#poster.video__poster(src='../img/bg-16.jpg')
+    section.section-our-values
+      .our-values
+        h2.our-values__title
+          | Our core values
+        p.our-values__subtitle
+          | Our mission is&nbsp;to&nbsp;set the highest standards for construction sphere.
+        .our-values__cards
+          .our-values__card
+            svg
+              use(xlink:href='../img/svg/sprite3.svg#icon-like')
+            span.our-values__inner-title
+              | Quality
+            p.our-values__inner-subtitle
+              | Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+          .our-values__card.our-values__card--central
+            svg
+              use(xlink:href='../img/svg/sprite2.svg#icon-hand')
+            span.our-values__inner-title
+              | Safety
+            p.our-values__inner-subtitle
+              | Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
+          .our-values__card
+            svg
+              use(xlink:href='../img/svg/sprite1.svg#icon-comfort')
+            span.our-values__inner-title
+              | Comfort
+            p.our-values__inner-subtitle
+              | Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.
+    article.article-form
+      // <div class="container-f">
+      h3.form-q__title
+        | Want to&nbsp;know more? Ask&nbsp;us a&nbsp;question:
+      form.form-q(action='#' name='form-questions' method='post')
+        label.form-q__label(for='username')
+          span
+            | Name*
+          input.form-q__input(type='text' name='username' required='' placeholder='Your name')
+        label.form-q__label(for='telephone')
+          span
+            | Phone*
+          input.form-q__input(type='tel' name='telephone' required='' placeholder='Your phone')
+        label.form-q__label(for='message')
+          span
+            | Message*
+          input.form-q__input(type='text' name='message' required='' placeholder='Your message')
+        button.form-q__btn(type='submit')
+          | SEND
+      // </div>
+    section.section-service
+      .service
+        .service__container
+          h2.service__title
+            | Our services
+          p.service__subtitle
+            | Createx Construction Bureau is a construction giant with a full range of construction services.
+          .service__cards
+            .service__card-block
+              a.service__card(href="more-service.pug")
+                img.service__img(src='../img/project/service.jpg' alt='image room tiny')
+                .service__inner-content
+                  svg
+                    use(xlink:href='../img/svg/sprite3.svg#icon-construction')
+                  span Construction
+                .service__external-content
+                  svg
+                    use(xlink:href='../img/svg/sprite3.svg#icon-construction')
+                  span Construction
+              a.service__card(href="more-service.pug")
+                img.service__img(src='../img/project/service.jpg' alt='image room tiny')
+                .service__inner-content
+                  svg
+                    use(xlink:href='../img/svg/sprite4.svg#icon-project')
+                  span Project Development
+                .service__external-content
+                  svg
+                    use(xlink:href='../img/svg/sprite4.svg#icon-project')
+                  span Project Development
+            .service__card-block      
+              a.service__card(href="more-service.pug")
+                img.service__img(src='../img/project/service.jpg' alt='image room tiny')
+                .service__inner-content
+                  svg
+                    use(xlink:href='../img/svg/sprite5.svg#icon-design')
+                  span Interior Design
+                .service__external-content
+                  svg
+                    use(xlink:href='../img//svg/sprite5.svg#icon-design')
+                  span Interior Design
+              a.service__card(href="more-service.pug")
+                img.service__img(src='../img/project/service.jpg' alt='image room tiny')
+                .service__inner-content
+                  svg
+                    use(xlink:href='../img/svg/sprite3.svg#icon-repairs')
+                  span Repairs
+                .service__external-content
+                  svg
+                    use(xlink:href='../img/svg/sprite3.svg#icon-repairs')
+                  span Repairs
+          // cards end
+          .more-inf
+            p.more-inf__text
+              | Learn more about our services
+            a.btn-link(href='services.html')
+              | View services
+        // service__container end
+    section.section-project
+      .project
+        .project__container
+          h2.project__title
+            | Browse our selected projects and learn more about our work
+          button.arrow.arrow--project(href='#')
+            svg.arrow__pic
+              use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')
+          button.arrow.arrow--project(href='#')
+            svg.arrow__pic
+              use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')
+        // container end
+        .cards
+          .card
+            img.card__img(src='../img/project/project1.jpg' alt='photo Business Centers')
+            a.card__text(href="more-works.pug") 
+              span.card__name-project
+                | Red Finger Building
+              span.card__type-project
+                | Business Centers
+            .card__text--invisible
+              span.card__name-project
+                | Red Finger Building
+              span.card__type-project
+                | Business Centers
+              a.btn-link.btn-link--project(href='more-works.pug')
+                | View Project
+          .card
+            img.card__img(src='../img/project/project2.jpg' alt='photo Business Centers')
+            a.card__text(href="more-works.pug") 
+              span.card__name-project
+                | Cubes Building
+              span.card__type-project
+                | Business Centers
+            .card__text--invisible
+              span.card__name-project
+                | Red Finger Building
+              span.card__type-project
+                | Business Centers
+              a.btn-link.btn-link--project(href='more-works.pug')
+                | View Project
+          .card
+            img.card__img(src='../img/project/project3.jpg' alt='photo Business Centers')
+            a.card__text(href="more-works.pug") 
+              span.card__name-project
+                | The Pencil Building
+              span.card__type-project
+                | Stores &amp;&nbsp;Malls
+            .card__text--invisible
+              span.card__name-project
+                | Red Finger Building
+              span.card__type-project
+                | Business Centers
+              a.btn-link.btn-link--project(href='more-works.pug')
+                | View Project
+        .more-inf
+          p.more-inf__text
+            | Explore all our works
+          a.btn-link(href='work.pug')
+            | View portfolio
+    section.section-supported
+      .supported
+        h2.supported__title
+          | Supported by 12+ partners
+        .supported__container
+          .supported__block-partner
+            a.supported__link-partner(href='#')
+              img.supported__img-partner(src='../img/brands/brand-1.png' alt='icon partners')
+            a.supported__link-partner(href='#')
+              img.supported__img-partner(src='../img/brands/brand-2.png' alt='icon partners')
+            a.supported__link-partner(href='#')
+              img.supported__img-partner(src='../img//brands/brand-3.png' alt='icon partners')
+          .supported__block-partner
+            a.supported__link-partner(href='#')
+              img.supported__img-partner(src='../img/brands/brand-4.png' alt='icon partners')
+            a.supported__link-partner(href='#')
+              img.supported__img-partner(src='../img/brands/brand-5.png' alt='icon partners')
+            a.supported__link-partner(href='#')
+              img.supported__img-partner(src='../img/brands/brand-6.png' alt='icon partners')
+        .supported__content
+          h3.supported__inner-title
+            | What our clients are saying
+          .supported__feedback
+            img.supported__user-icon(src='../img/brands/face.jpg' alt='user photo')
+            p.supported__user-text
+              | Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco.
+            span.supported__user-name
+              | Shawn Edwards
+            .supported__inner-info
+              span
+                | Position, Company name
+              button.arrow.arrow--project(href='#')
+                svg.arrow__pic
+                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')
+              button.arrow.arrow--project(href='#')
+                svg.arrow__pic
+                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')
+        img.supported__photo(src='../img/brands/face2.jpg' alt='photo happy clients')
+    section.section-info
+      article.facts
+        h2.facts__title
+          | Some facts and figures
+        .facts__statistic
+          .facts__inner-card
+            .facts__diagram.item--1
+              span 98%
+            p.facts__text
+              | Totally satisfied clients
+          .facts__inner-card
+            .facts__diagram.item--2
+              span 20
+            p.facts__text
+              | Years of experience
+          .facts__inner-card
+            .facts__diagram.item--3
+              span 9452
+            p.facts__text
+              | Working hours spent
+          .facts__inner-card
+            .facts__diagram.item--4
+              span 100%
+            p.facts__text
+              | Succeeded projects
+      article.news
+        h2.news__title
+          | Recent news
+        .news__content
+          .news__top-block
+            img.news__photo.news__photo--top(src='../img/news/news-1.jpg' alt='news photo')
+            .news__text
+              h4.news__inner-title
+                a.news__link-post(href='#')
+                  | How to Build Climate Change-Resilient Infrastructure
+              .news__inner-info
+                span.news__type
+                  | Industry News
+                span.news__date
+                  | June 24, 2020
+                a.news__link-comments(href='#')
+                  svg.news__comments-icon
+                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                  span.news__qty-comments
+                    | 4 comments
+              p.news__paragraph
+                | Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+          // top-block end
+          .news__other-article
+            .news__inner-block
+              img.news__photo(src='../img/news/news-2.jpg' alt='news photo')
+              .news__inner-text
+                h4.news__inner-title
+                  a.news__link-post(href='more-news.pug')
+                    | How Construction Can Help Itself
+                .news__inner-info
+                  span.news__type
+                    | Innovation
+                  span.news__date
+                    | June 12, 2020
+                  a.news__link-comments(href='more-news.pug')
+                    svg.news__comments-icon
+                      use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                    span.news__qty-comments
+                      | No comments
+            .news__inner-block
+              img.news__photo(src='../img/news/news-3.jpg' alt='news photo')
+              .news__inner-text
+                h4.news__inner-title
+                  a.news__link-post(href='more-news.pug')
+                    | Types of Flooring Materials
+                .news__inner-info
+                  span.news__type
+                    | Company News
+                  span.news__date
+                    | December 1, 2019
+                  a.news__link-comments(href='more-news.pug')
+                    svg.news__comments-icon
+                      use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                    span.news__qty-comments
+                      | No comments
+        // content end
+      .more-inf
+        p.more-inf__text
+          | Explore all our news posts
+        a.btn-link(href='news.pug')
+          | View all news
+    article.article-global-form
+      .container
+        .content.content--form
+          form#global-form.form-global(action='#' method='post' name='form-global')
+            h3.form-global__title
+              | A quick way to discuss details
+            label.form-global__label(for='name')
+              | Name*
+              input.form-global__input(type='text' name='name' placeholder='Your name' required='')
+            label.form-global__label(for='telephone')
+              | Phone*
+              input.form-global__input(type='tel' name='telephone' placeholder='Your phone number' required='')
+            label.form-global__label(for='email')
+              | Email
+              input.form-global__input(type='email' name='email' placeholder='Your working email')
+            label.form-global__label(for='email')
+              | Message*
+              input.form-global__input(type='text' name='Message' placeholder='Your message' required='')
+            .form-global__block-agreement
+              input#checkbox-inf.form-global__checkbox(type='checkbox' required='')
+              label.form-global__label.form-global__label--checkbox(for='checkbox-inf')
+                | I agree to receive communications from Createx Construction Bureau.
+            button.form-global__btn(type='submit' form='global-form')
+              | send request
+  include ./partion/footer
+  
