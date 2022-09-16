@@ -3,11 +3,11 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='shortcut icon' type='image/png' href='img//title.png')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
-  link(rel='stylesheet' href='./css/sass/main.scss')
+  link(rel='stylesheet' href="css/style.css")
   title INTERIOR DESIGN
 body
   include ./partion/header
@@ -31,15 +31,15 @@ body
                     |Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet.
         article.container
             .more-services__content
-                img.more-services__top-img(src='../img/more-services/more-services-1.jpg' alt='We offer')
+                img.more-services__top-img(src='img/more-services/more-services-1.jpg' alt='We offer')
                 .more-services__text
                   h2.more-services__inner-title
                     |We offer                  
                   .accordion 
                     .accordion__item.accordion__item--active
                       .accordion__content 
-                        img.accordion__plus-img(src='../img/svg/plus.svg' alt='plus icon')
-                        img.accordion__minus-img(src='../img/svg/minus.svg' alt='minus icon')
+                        img.accordion__plus-img(src='img/svg/plus.svg' alt='plus icon')
+                        img.accordion__minus-img(src='img/svg/minus.svg' alt='minus icon')
                         h4.accordion__title
                           |Interior design of apartments
                       .accordion__inner-text
@@ -47,8 +47,8 @@ body
                           |Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis. 
                     .accordion__item
                       .accordion__content
-                        img.accordion__plus-img(src='../img/svg/plus.svg' alt='plus icon')
-                        img.accordion__minus-img(src='../img/svg/minus.svg' alt='minus icon')
+                        img.accordion__plus-img(src='img/svg/plus.svg' alt='plus icon')
+                        img.accordion__minus-img(src='img/svg/minus.svg' alt='minus icon')
                         h4.accordion__title
                           |Interior design of private houses
                       .accordion__inner-text
@@ -95,19 +95,19 @@ body
               | Our mission is&nbsp;to&nbsp;set the highest standards for construction sphere.
             .our-values__cards
               .our-values__card
-                img(src='../img/svg/benefits/fixed-terms.svg' alt='fixed terms icon')
+                img(src='img/svg/benefits/fixed-terms.svg' alt='fixed terms icon')
                 span.our-values__inner-title.our-values__inner-title--services
                   | Fixed Terms & Cost
                 p.our-values__inner-subtitle
                   | Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
               .our-values__card.our-values__card--central
-                img(src='../img/svg/benefits/qualifid.svg' alt='Qualified Workers icon')
+                img(src='img/svg/benefits/qualifid.svg' alt='Qualified Workers icon')
                 span.our-values__inner-title.our-values__inner-title--services
                   | Safety
                 p.our-values__inner-subtitle
                   | Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
               .our-values__card
-                img(src='../img/svg/benefits/control.svg' alt='Supervision Control icon')
+                img(src='img/svg/benefits/control.svg' alt='Supervision Control icon')
                 span.our-values__inner-title.our-values__inner-title--services
                   | Supervision &amp;&nbsp;Control
                 p.our-values__inner-subtitle
@@ -120,14 +120,14 @@ body
               | Related projects
             button.arrow.arrow--project(href='#')
                 svg.arrow__pic
-                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')                  
+                  use(xlink:href='img/svg/sprite1.svg#icon-arrow-left')                  
             button.arrow.arrow--project(href='#')
                 svg.arrow__pic
-                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')                  
+                  use(xlink:href='img/svg/sprite1.svg#icon-arrow-right')                  
           // container end
           .cards
             .card
-              img.card__img(src='../img/more-services/more-services-2.jpg' alt='photo Apartments & flats')
+              img.card__img(src='img/more-services/more-services-2.jpg' alt='photo Apartments & flats')
               a.card__text(href="more-works.pug") 
                 span.card__name-project
                   | Kids Bedroom With Decorations
@@ -141,7 +141,7 @@ body
                 a.btn-link.btn-link--project(href='more-works.pug')
                   | View Project
             .card
-              img.card__img(src='../img/more-services/more-services-3.jpg' alt='photo Apartments & flats')
+              img.card__img(src='img/more-services/more-services-3.jpg' alt='photo Apartments & flats')
               a.card__text(href="more-works.pug") 
                 span.card__name-project
                   | Modern Double Bedroom
@@ -155,7 +155,7 @@ body
                 a.btn-link.btn-link--project(href='more-works.pug')
                   | View Project
             .card
-              img.card__img(src='../img/more-services/more-services-4.jpg' alt='photo Private houses')
+              img.card__img(src='img/more-services/more-services-4.jpg' alt='photo Private houses')
               a.card__text(href="more-works.pug") 
                 span.card__name-project
                   | Scandinavian Style Interior
@@ -203,72 +203,72 @@ body
                   td.pricing__inner-row
                     |Installation plan
                   td 
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                 tr
                   td.pricing__inner-row
                     |Planning solutions (2-3&nbsp;options)
                   td 
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                 tr
                   td.pricing__inner-row
                     |Lighting plan
                   td 
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                 tr
                   td.pricing__inner-row
                     |Flooring plan
                   td 
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                 tr
                   td.pricing__inner-row
                     |Heating floor laying scheme
                   td 
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                 tr
                   td.pricing__inner-row
                     |Air conditioner zones layout
                   td 
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                 tr
                   td.pricing__inner-row
                     |3D&nbsp;visualization of&nbsp;all rooms
                   td.pricing__inner-row
                     |simplified
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                 tr
                   td.pricing__inner-row
                     |Visualization of&nbsp;each room (3-4&nbsp;angles)
                   td
                   td
                   td
-                    img(src='../img/svg/check.svg' alt='check icon')
+                    img(src='img/svg/check.svg' alt='check icon')
                 tr
                   td.pricing__inner-row
                     |3D&nbsp;visualization of&nbsp;all rooms
@@ -295,18 +295,18 @@ body
             .supported__container.supported__container--pricing
               .supported__block-partner
                 a.supported__link-partner(href='#')
-                  img.supported__img-partner(src='../img/brands/brand-1.png' alt='icon partners')
+                  img.supported__img-partner(src='img/brands/brand-1.png' alt='icon partners')
                 a.supported__link-partner(href='#')
-                  img.supported__img-partner(src='../img/brands/brand-2.png' alt='icon partners')
+                  img.supported__img-partner(src='img/brands/brand-2.png' alt='icon partners')
                 a.supported__link-partner(href='#')
-                  img.supported__img-partner(src='../img//brands/brand-3.png' alt='icon partners')
+                  img.supported__img-partner(src='img//brands/brand-3.png' alt='icon partners')
               .supported__block-partner                  
                 a.supported__link-partner(href='#')
-                  img.supported__img-partner(src='../img/brands/brand-4.png' alt='icon partners')
+                  img.supported__img-partner(src='img/brands/brand-4.png' alt='icon partners')
                 a.supported__link-partner(href='#')
-                  img.supported__img-partner(src='../img/brands/brand-5.png' alt='icon partners')
+                  img.supported__img-partner(src='img/brands/brand-5.png' alt='icon partners')
                 a.supported__link-partner(href='#')
-                  img.supported__img-partner(src='../img/brands/brand-6.png' alt='icon partners')
+                  img.supported__img-partner(src='img/brands/brand-6.png' alt='icon partners')
 
     article.article-global-form
       .container

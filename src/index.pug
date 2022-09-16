@@ -3,18 +3,18 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='shortcut icon' type='image/png' href='img//title.png')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
-  link(rel='stylesheet' href='./css/sass/main.scss')
+  link(rel='stylesheet' href="css/style.css")
   title CREATEX CONSTRUCTION
 body
   include ./partion/header
   section.section-hero
     button.arrow.arrow--hero(href='#')
       svg.arrow__pic
-        use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')
+        use(xlink:href='img/svg/sprite1.svg#icon-arrow-left')
     .hero
       h1.hero__title
         | CREATE  
@@ -34,7 +34,7 @@ body
         span.hero__num-slide 04
     button.arrow.arrow--hero(href='#')
       svg.arrow__pic
-        use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')
+        use(xlink:href='img/svg/sprite1.svg#icon-arrow-right')
   main.main
     section.section-constraction
       .constraction
@@ -46,8 +46,8 @@ body
           video#video-hero.video(loop='' muted='')
             source(src='./video/building.mp4' type='video/mp4')
           #video-controls.video__controls 
-            img#playpause.video__paused(src="../img/svg/play.svg", alt="btn play")
-          img#poster.video__poster(src='../img/bg-16.jpg')
+            img#playpause.video__paused(src="img/svg/play.svg", alt="btn play")
+          img#poster.video__poster(src='img/bg-16.jpg')
     section.section-our-values
       .our-values
         h2.our-values__title
@@ -57,21 +57,21 @@ body
         .our-values__cards
           .our-values__card
             svg
-              use(xlink:href='../img/svg/sprite3.svg#icon-like')
+              use(xlink:href='img/svg/sprite3.svg#icon-like')
             span.our-values__inner-title
               | Quality
             p.our-values__inner-subtitle
               | Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
           .our-values__card.our-values__card--central
             svg
-              use(xlink:href='../img/svg/sprite2.svg#icon-hand')
+              use(xlink:href='img/svg/sprite2.svg#icon-hand')
             span.our-values__inner-title
               | Safety
             p.our-values__inner-subtitle
               | Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
           .our-values__card
             svg
-              use(xlink:href='../img/svg/sprite1.svg#icon-comfort')
+              use(xlink:href='img/svg/sprite1.svg#icon-comfort')
             span.our-values__inner-title
               | Comfort
             p.our-values__inner-subtitle
@@ -106,45 +106,45 @@ body
           .service__cards
             .service__card-block
               a.service__card(href="more-service.pug")
-                img.service__img(src='../img/project/service.jpg' alt='image room tiny')
+                img.service__img(src='img/project/service.jpg' alt='image room tiny')
                 .service__inner-content
                   svg
-                    use(xlink:href='../img/svg/sprite3.svg#icon-construction')
+                    use(xlink:href='img/svg/sprite3.svg#icon-construction')
                   span Construction
                 .service__external-content
                   svg
-                    use(xlink:href='../img/svg/sprite3.svg#icon-construction')
+                    use(xlink:href='img/svg/sprite3.svg#icon-construction')
                   span Construction
               a.service__card(href="more-service.pug")
-                img.service__img(src='../img/project/service.jpg' alt='image room tiny')
+                img.service__img(src='img/project/service.jpg' alt='image room tiny')
                 .service__inner-content
                   svg
-                    use(xlink:href='../img/svg/sprite4.svg#icon-project')
+                    use(xlink:href='img/svg/sprite4.svg#icon-project')
                   span Project Development
                 .service__external-content
                   svg
-                    use(xlink:href='../img/svg/sprite4.svg#icon-project')
+                    use(xlink:href='img/svg/sprite4.svg#icon-project')
                   span Project Development
             .service__card-block      
               a.service__card(href="more-service.pug")
-                img.service__img(src='../img/project/service.jpg' alt='image room tiny')
+                img.service__img(src='img/project/service.jpg' alt='image room tiny')
                 .service__inner-content
                   svg
-                    use(xlink:href='../img/svg/sprite5.svg#icon-design')
+                    use(xlink:href='img/svg/sprite5.svg#icon-design')
                   span Interior Design
                 .service__external-content
                   svg
-                    use(xlink:href='../img//svg/sprite5.svg#icon-design')
+                    use(xlink:href='img//svg/sprite5.svg#icon-design')
                   span Interior Design
               a.service__card(href="more-service.pug")
-                img.service__img(src='../img/project/service.jpg' alt='image room tiny')
+                img.service__img(src='img/project/service.jpg' alt='image room tiny')
                 .service__inner-content
                   svg
-                    use(xlink:href='../img/svg/sprite3.svg#icon-repairs')
+                    use(xlink:href='img/svg/sprite3.svg#icon-repairs')
                   span Repairs
                 .service__external-content
                   svg
-                    use(xlink:href='../img/svg/sprite3.svg#icon-repairs')
+                    use(xlink:href='img/svg/sprite3.svg#icon-repairs')
                   span Repairs
           // cards end
           .more-inf
@@ -160,14 +160,14 @@ body
             | Browse our selected projects and learn more about our work
           button.arrow.arrow--project(href='#')
             svg.arrow__pic
-              use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')
+              use(xlink:href='img/svg/sprite1.svg#icon-arrow-left')
           button.arrow.arrow--project(href='#')
             svg.arrow__pic
-              use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')
+              use(xlink:href='img/svg/sprite1.svg#icon-arrow-right')
         // container end
         .cards
           .card
-            img.card__img(src='../img/project/project1.jpg' alt='photo Business Centers')
+            img.card__img(src='img/project/project1.jpg' alt='photo Business Centers')
             a.card__text(href="more-works.pug") 
               span.card__name-project
                 | Red Finger Building
@@ -181,7 +181,7 @@ body
               a.btn-link.btn-link--project(href='more-works.pug')
                 | View Project
           .card
-            img.card__img(src='../img/project/project2.jpg' alt='photo Business Centers')
+            img.card__img(src='img/project/project2.jpg' alt='photo Business Centers')
             a.card__text(href="more-works.pug") 
               span.card__name-project
                 | Cubes Building
@@ -195,7 +195,7 @@ body
               a.btn-link.btn-link--project(href='more-works.pug')
                 | View Project
           .card
-            img.card__img(src='../img/project/project3.jpg' alt='photo Business Centers')
+            img.card__img(src='img/project/project3.jpg' alt='photo Business Centers')
             a.card__text(href="more-works.pug") 
               span.card__name-project
                 | The Pencil Building
@@ -220,23 +220,23 @@ body
         .supported__container
           .supported__block-partner
             a.supported__link-partner(href='#')
-              img.supported__img-partner(src='../img/brands/brand-1.png' alt='icon partners')
+              img.supported__img-partner(src='img/brands/brand-1.png' alt='icon partners')
             a.supported__link-partner(href='#')
-              img.supported__img-partner(src='../img/brands/brand-2.png' alt='icon partners')
+              img.supported__img-partner(src='img/brands/brand-2.png' alt='icon partners')
             a.supported__link-partner(href='#')
-              img.supported__img-partner(src='../img//brands/brand-3.png' alt='icon partners')
+              img.supported__img-partner(src='img//brands/brand-3.png' alt='icon partners')
           .supported__block-partner
             a.supported__link-partner(href='#')
-              img.supported__img-partner(src='../img/brands/brand-4.png' alt='icon partners')
+              img.supported__img-partner(src='img/brands/brand-4.png' alt='icon partners')
             a.supported__link-partner(href='#')
-              img.supported__img-partner(src='../img/brands/brand-5.png' alt='icon partners')
+              img.supported__img-partner(src='img/brands/brand-5.png' alt='icon partners')
             a.supported__link-partner(href='#')
-              img.supported__img-partner(src='../img/brands/brand-6.png' alt='icon partners')
+              img.supported__img-partner(src='img/brands/brand-6.png' alt='icon partners')
         .supported__content
           h3.supported__inner-title
             | What our clients are saying
           .supported__feedback
-            img.supported__user-icon(src='../img/brands/face.jpg' alt='user photo')
+            img.supported__user-icon(src='img/brands/face.jpg' alt='user photo')
             p.supported__user-text
               | Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco.
             span.supported__user-name
@@ -246,11 +246,11 @@ body
                 | Position, Company name
               button.arrow.arrow--project(href='#')
                 svg.arrow__pic
-                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')
+                  use(xlink:href='img/svg/sprite1.svg#icon-arrow-left')
               button.arrow.arrow--project(href='#')
                 svg.arrow__pic
-                  use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')
-        img.supported__photo(src='../img/brands/face2.jpg' alt='photo happy clients')
+                  use(xlink:href='img/svg/sprite1.svg#icon-arrow-right')
+        img.supported__photo(src='img/brands/face2.jpg' alt='photo happy clients')
     section.section-info
       article.facts
         h2.facts__title
@@ -281,7 +281,7 @@ body
           | Recent news
         .news__content
           .news__top-block
-            img.news__photo.news__photo--top(src='../img/news/news-1.jpg' alt='news photo')
+            img.news__photo.news__photo--top(src='img/news/news-1.jpg' alt='news photo')
             .news__text
               h4.news__inner-title
                 a.news__link-post(href='#')
@@ -293,7 +293,7 @@ body
                   | June 24, 2020
                 a.news__link-comments(href='#')
                   svg.news__comments-icon
-                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                    use(xlink:href='img/svg/sprite1.svg#icon-chat')
                   span.news__qty-comments
                     | 4 comments
               p.news__paragraph
@@ -301,7 +301,7 @@ body
           // top-block end
           .news__other-article
             .news__inner-block
-              img.news__photo(src='../img/news/news-2.jpg' alt='news photo')
+              img.news__photo(src='img/news/news-2.jpg' alt='news photo')
               .news__inner-text
                 h4.news__inner-title
                   a.news__link-post(href='more-news.pug')
@@ -313,11 +313,11 @@ body
                     | June 12, 2020
                   a.news__link-comments(href='more-news.pug')
                     svg.news__comments-icon
-                      use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                      use(xlink:href='img/svg/sprite1.svg#icon-chat')
                     span.news__qty-comments
                       | No comments
             .news__inner-block
-              img.news__photo(src='../img/news/news-3.jpg' alt='news photo')
+              img.news__photo(src='img/news/news-3.jpg' alt='news photo')
               .news__inner-text
                 h4.news__inner-title
                   a.news__link-post(href='more-news.pug')
@@ -329,7 +329,7 @@ body
                     | December 1, 2019
                   a.news__link-comments(href='more-news.pug')
                     svg.news__comments-icon
-                      use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                      use(xlink:href='img/svg/sprite1.svg#icon-chat')
                     span.news__qty-comments
                       | No comments
         // content end

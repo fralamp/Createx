@@ -3,11 +3,11 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='shortcut icon' type='image/png' href='img//title.png')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
-  link(rel='stylesheet' href='./css/sass/main.scss')
+  link(rel='stylesheet' href="css/style.css")
   title AVAILABLE POSITIONS
 body
   include ./partion/header
@@ -35,11 +35,11 @@ body
                     .av-positions__block-info 
                         .av-positions__info
                             .av-positions__details                        
-                                img(src="../img/svg/map.svg", alt="map icon")
+                                img(src="img/svg/map.svg", alt="map icon")
                                 span 
                                     |New York
                             .av-positions__details 
-                                img.av-positions__icon(src="../img/svg/clock.svg", alt="clock icon")
+                                img.av-positions__icon(src="img/svg/clock.svg", alt="clock icon")
                                 span 
                                     |Full Time 
                         .av-positions__position 
@@ -51,11 +51,11 @@ body
                     .av-positions__block-info 
                         .av-positions__info
                             .av-positions__details                        
-                                img(src="../img/svg/map.svg", alt="map icon")
+                                img(src="img/svg/map.svg", alt="map icon")
                                 span 
                                     |San Francisco
                             .av-positions__details 
-                                img.av-positions__icon(src="../img/svg/clock.svg", alt="clock icon")
+                                img.av-positions__icon(src="img/svg/clock.svg", alt="clock icon")
                                 span 
                                     |Full Time 
                         .av-positions__position 
@@ -67,11 +67,11 @@ body
                     .av-positions__block-info 
                         .av-positions__info
                             .av-positions__details                        
-                                img(src="../img/svg/map.svg", alt="map icon")
+                                img(src="img/svg/map.svg", alt="map icon")
                                 span 
                                     |New Jersey
                             .av-positions__details 
-                                img.av-positions__icon(src="../img/svg/clock.svg", alt="clock icon")
+                                img.av-positions__icon(src="img/svg/clock.svg", alt="clock icon")
                                 span 
                                     |Full Time 
                         .av-positions__position 
@@ -83,11 +83,11 @@ body
                     .av-positions__block-info 
                         .av-positions__info
                             .av-positions__details                        
-                                img(src="../img/svg/map.svg", alt="map icon")
+                                img(src="img/svg/map.svg", alt="map icon")
                                 span 
                                     |New York
                             .av-positions__details 
-                                img.av-positions__icon(src="../img/svg/clock.svg", alt="clock icon")
+                                img.av-positions__icon(src="img/svg/clock.svg", alt="clock icon")
                                 span 
                                     |Full Time 
                         .av-positions__position 
@@ -99,11 +99,11 @@ body
                     .av-positions__block-info 
                         .av-positions__info
                             .av-positions__details                        
-                                img(src="../img/svg/map.svg", alt="map icon")
+                                img(src="img/svg/map.svg", alt="map icon")
                                 span 
                                     |New York
                             .av-positions__details 
-                                img.av-positions__icon(src="../img/svg/clock.svg", alt="clock icon")
+                                img.av-positions__icon(src="img/svg/clock.svg", alt="clock icon")
                                 span 
                                     |Full Time 
                         .av-positions__position 
@@ -129,19 +129,19 @@ body
                     | There&rsquo;s always room for talent.
                 .our-values__cards
                     .our-values__card
-                        img(src="../img/svg/benefits/brain.svg", alt="training icon")
+                        img(src="img/svg/benefits/brain.svg", alt="training icon")
                         span.our-values__inner-title
                             | Training
                         p.our-values__inner-subtitle
                             | Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
                     .our-values__card.our-values__card--central
-                        img(src="../img/svg/benefits/growth.svg", alt="Professional Growth icon")
+                        img(src="img/svg/benefits/growth.svg", alt="Professional Growth icon")
                         span.our-values__inner-title
                             | Professional Growth
                         p.our-values__inner-subtitle
                             | Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
                     .our-values__card
-                        img(src="../img/svg/benefits/budjet.svg", alt="Growing Salary icon")
+                        img(src="img/svg/benefits/budjet.svg", alt="Growing Salary icon")
                         span.our-values__inner-title
                             | Growing Salary
                         p.our-values__inner-subtitle
@@ -152,7 +152,7 @@ body
             h4.modal__title
                 |Subscribe to our newsletter
             button.modal__close(type='button')
-                img(src="../img/svg/close.svg", alt="close button icon")
+                img(src="img/svg/close.svg", alt="close button icon")
             form#subscribe-form.form-position(action='/' name='subscribe-form' method='post')
                 .form-position__control 
                     label.form-position__label(for='name')
@@ -169,7 +169,7 @@ body
             h4.modal__title
                 |Send your CV
             button.modal__close(type='button')
-                img(src="../img/svg/close.svg", alt="close button icon")
+                img(src="img/svg/close.svg", alt="close button icon")
             form#cv-form.form-position(action='/' name='subscribe-form' method='post')
                 .form-position__control 
                     label.form-position__label(for='name')
@@ -194,7 +194,7 @@ body
                     textarea#cov-letter.form-position__textarea(name="cov-letter", cols="30", rows="4" placeholder='Your covering letter') 
                     input#upload.form-position__upload(type="file" name='file')
                     label.form-position__label-upload(for="upload") 
-                        img(src="../img/svg/attach.svg", alt="attach icon")
+                        img(src="img/svg/attach.svg", alt="attach icon")
                         span
                             |Attach your CV*
                 button.btn.btn--form(type='submit' form='cv-form')

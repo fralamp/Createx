@@ -3,11 +3,11 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='shortcut icon' type='image/png' href='img//title.png')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
-  link(rel='stylesheet' href='./css/sass/main.scss')
+  link(rel='stylesheet' href="css/style.css")
   title ABOUT US
 body
   include ./partion/header
@@ -25,34 +25,34 @@ body
                 |ABOUT US
             p.more-services__subtitle
                 |Createx Construction Bureau has been successfully operating in&nbsp;the USA construction market since 2000. We&nbsp;are proud to&nbsp;offer you quality construction and exemplary service.
-        img.about-us__background(src='../img/bg-12.png' alt='background about us')
+        img.about-us__background(src='img/bg-12.png' alt='background about us')
     section.about-us
         .container
             .about-us__achivments
                 .about-us__achivments-blocks 
                     svg
-                        use(xlink:href='../img/svg/sprite3.svg#icon-like')
+                        use(xlink:href='img/svg/sprite3.svg#icon-like')
                     span
                         |60%
                     span
                         |Clients on&nbsp;the recommendation of&nbsp;friends
                 .about-us__achivments-blocks 
                     svg
-                        use(xlink:href='../img/svg/sprite3.svg#icon-repairs')
+                        use(xlink:href='img/svg/sprite3.svg#icon-repairs')
                     span
                         |2400+
                     span
                         |Apartments renovated
                 .about-us__achivments-blocks 
                     svg
-                        use(xlink:href='../img/svg/sprite5.svg#icon-qualifid')
+                        use(xlink:href='img/svg/sprite5.svg#icon-qualifid')
                     span
                         |670
                     span
                         |Qualified specialists
                 .about-us__achivments-blocks 
                     svg
-                        use(xlink:href='../img/svg/sprite5.svg#icon-design')
+                        use(xlink:href='img/svg/sprite5.svg#icon-design')
                     span
                         |150000+&nbsp;#[sup m2]
                     span
@@ -61,9 +61,9 @@ body
         .about-us__content
             .container
                 .about-us__quote
-                    img.about-us__quote-img(src="../img/brands/face3.jpg", alt="CEO photo")
+                    img.about-us__quote-img(src="img/brands/face3.jpg", alt="CEO photo")
                     blockquote.about-us__blockquote
-                        img.about-us__quote-icon(src="../img/svg/quote.svg", alt="qoute icon")
+                        img.about-us__quote-icon(src="img/svg/quote.svg", alt="qoute icon")
                         p 
                             |Dapibus nec vitae ante mattis. Aliquam phasellus ac dui augue in. Sed aliquet in egestas hac at proin sed quam. Etiam aliquet sagittis non, massa cum pulvinar. Et in leo, tempus purus vestibulum ut blandit et mi. Odio massa purus vel praesent arcu enim elit felis viverra.
                         p 
@@ -73,7 +73,7 @@ body
                                 |Courtney Alexander
                             span 
                                 |CEO&nbsp;&mdash; Createx Construction Bureau
-                            img.about-us__quote-signature(src="../img/svg/signature.svg", alt="signature")
+                            img.about-us__quote-signature(src="img/svg/signature.svg", alt="signature")
         article.about-us__inner-container
             .our-values
                 h2.our-values__title
@@ -83,21 +83,21 @@ body
                 .our-values__cards
                     .our-values__card
                         svg
-                            use(xlink:href='../img/svg/sprite3.svg#icon-like')
+                            use(xlink:href='img/svg/sprite3.svg#icon-like')
                         span.our-values__inner-title
                             | Quality
                         p.our-values__inner-subtitle
                             | Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
                     .our-values__card.our-values__card--central
                         svg
-                            use(xlink:href='../img/svg/sprite2.svg#icon-hand')
+                            use(xlink:href='img/svg/sprite2.svg#icon-hand')
                         span.our-values__inner-title
                             | Safety
                         p.our-values__inner-subtitle
                             | Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
                     .our-values__card
                         svg
-                            use(xlink:href='../img/svg/sprite1.svg#icon-comfort')
+                            use(xlink:href='img/svg/sprite1.svg#icon-comfort')
                         span.our-values__inner-title
                             | Comfort
                         p.our-values__inner-subtitle
@@ -108,10 +108,10 @@ body
                             | Our history
                         button.arrow.arrow--project(href='#')
                             svg.arrow__pic
-                                use(xlink:href='../img/svg/sprite1.svg#icon-arrow-left')                           
+                                use(xlink:href='img/svg/sprite1.svg#icon-arrow-left')                           
                         button.arrow.arrow--project(href='#')
                             svg.arrow__pic
-                                use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')                          
+                                use(xlink:href='img/svg/sprite1.svg#icon-arrow-right')                          
                     .about-us__history-container 
                         .about-us__history-phase 
                             ul.about-us__history-list
@@ -143,7 +143,7 @@ body
                                     a(href="#")  
                                         |June 2000
                         .about-us__history-preview
-                            img.about-us__history-img(src="../img/brands/building.jpg", alt="phase photo")
+                            img.about-us__history-img(src="img/brands/building.jpg", alt="phase photo")
                             p 
                                 |Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam posuere malesuada magnis. Bcelerisque dapibus.  Eu nec vitae, 
         article.supported.supported--about
@@ -154,32 +154,32 @@ body
             .supported__container
                 .supported__block-partner
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img/brands/brand-1.png' alt='icon partners')
+                        img.supported__img-partner(src='img/brands/brand-1.png' alt='icon partners')
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img/brands/brand-2.png' alt='icon partners')
+                        img.supported__img-partner(src='img/brands/brand-2.png' alt='icon partners')
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img//brands/brand-3.png' alt='icon partners')
+                        img.supported__img-partner(src='img//brands/brand-3.png' alt='icon partners')
                 .supported__block-partner                        
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img/brands/brand-4.png' alt='icon partners')
+                        img.supported__img-partner(src='img/brands/brand-4.png' alt='icon partners')
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img/brands/brand-5.png' alt='icon partners')
+                        img.supported__img-partner(src='img/brands/brand-5.png' alt='icon partners')
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img/brands/brand-6.png' alt='icon partners')
+                        img.supported__img-partner(src='img/brands/brand-6.png' alt='icon partners')
                 .supported__block-partner                        
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img/brands/brand-7.png' alt='icon partners')
+                        img.supported__img-partner(src='img/brands/brand-7.png' alt='icon partners')
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img/brands/brand-8.png' alt='icon partners')
+                        img.supported__img-partner(src='img/brands/brand-8.png' alt='icon partners')
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img//brands/brand-9.png' alt='icon partners')
+                        img.supported__img-partner(src='img//brands/brand-9.png' alt='icon partners')
                 .supported__block-partner                        
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img/brands/brand-10.png' alt='icon partners')
+                        img.supported__img-partner(src='img/brands/brand-10.png' alt='icon partners')
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img/brands/brand-11.png' alt='icon partners')
+                        img.supported__img-partner(src='img/brands/brand-11.png' alt='icon partners')
                     a.supported__link-partner(href='#')
-                        img.supported__img-partner(src='../img/brands/brand-12.png' alt='icon partners')
+                        img.supported__img-partner(src='img/brands/brand-12.png' alt='icon partners')
         article.our-team 
             h2.our-team__title
                 |Our team
@@ -188,17 +188,17 @@ body
             .our-team__cards 
                 .our-team__card 
                     .our-team__card-top
-                        img.our-team__card-img(src="../img/brands/face11.jpg", alt="CEO photo")
+                        img.our-team__card-img(src="img/brands/face11.jpg", alt="CEO photo")
                         .our-team__social 
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-link')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-twitter')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-facebook')
                     .our-team__text
                         span 
                             |Courtney Alexander
@@ -206,17 +206,17 @@ body
                             |CEO, Co-Founder
                 .our-team__card 
                     .our-team__card-top
-                        img.our-team__card-img(src="../img/brands/face4.jpg", alt="CEO photo")
+                        img.our-team__card-img(src="img/brands/face4.jpg", alt="CEO photo")
                         .our-team__social 
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-link')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-twitter')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-facebook')
                     .our-team__text
                         span 
                             |Calvin Fox
@@ -224,17 +224,17 @@ body
                             |CTO, Co-Founder
                 .our-team__card 
                     .our-team__card-top
-                        img.our-team__card-img(src="../img/brands/face5.jpg", alt="CEO photo")
+                        img.our-team__card-img(src="img/brands/face5.jpg", alt="CEO photo")
                         .our-team__social 
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-link')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-twitter')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-facebook')
                     .our-team__text
                         span 
                             |Johnny Lane
@@ -242,17 +242,17 @@ body
                             |Commercial Manager
                 .our-team__card 
                     .our-team__card-top
-                        img.our-team__card-img(src="../img/brands/face6.jpg", alt="CEO photo")
+                        img.our-team__card-img(src="img/brands/face6.jpg", alt="CEO photo")
                         .our-team__social 
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-link')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-twitter')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-facebook')
                     .our-team__text
                         span 
                             |Diane Mccoy
@@ -260,17 +260,17 @@ body
                             |Director of Human Resources
                 .our-team__card 
                     .our-team__card-top
-                        img.our-team__card-img(src="../img/brands/face7.jpg", alt="CEO photo")
+                        img.our-team__card-img(src="img/brands/face7.jpg", alt="CEO photo")
                         .our-team__social 
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-link')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-twitter')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-facebook')
                     .our-team__text
                         span 
                             |Judith Warren
@@ -278,17 +278,17 @@ body
                             |Lead Accountant
                 .our-team__card 
                     .our-team__card-top
-                        img.our-team__card-img(src="../img/brands/face8.jpg", alt="CEO photo")
+                        img.our-team__card-img(src="img/brands/face8.jpg", alt="CEO photo")
                         .our-team__social 
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-link')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-twitter')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-facebook')
                     .our-team__text
                         span 
                             |Floyd Simmmons
@@ -296,17 +296,17 @@ body
                             |Finacial Director
                 .our-team__card 
                     .our-team__card-top
-                        img.our-team__card-img(src="../img/brands/face9.jpg", alt="CEO photo")
+                        img.our-team__card-img(src="img/brands/face9.jpg", alt="CEO photo")
                         .our-team__social 
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-link')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-twitter')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-facebook')
                     .our-team__text
                         span 
                             |Serenity Edwards
@@ -314,17 +314,17 @@ body
                             |Director of Marketing
                 .our-team__card 
                     .our-team__card-top
-                        img.our-team__card-img(src="../img/brands/face10.jpg", alt="CEO photo")
+                        img.our-team__card-img(src="img/brands/face10.jpg", alt="CEO photo")
                         .our-team__social 
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-link')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-twitter')
                             a.our-team__link(href="#" target="_blank") 
                                 svg.our-team__icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-facebook')
                     .our-team__text
                         span 
                             |Shawn Edwards
@@ -338,7 +338,7 @@ body
             .container
                 h2.our-team__title.mb-6
                     |We work worldwide 
-                img(src="../img/map.png", alt="map")
+                img(src="img/map.png", alt="map")
 
     article.article-global-form
       .container

@@ -3,11 +3,11 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='shortcut icon' type='image/png' href='img//title.png')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
-  link(rel='stylesheet' href='./css/sass/main.scss')
+  link(rel='stylesheet' href="css/style.css")
   title CONTACTS
 body
   include ./partion/header
@@ -33,7 +33,7 @@ body
           |Please complete the form. Detailed information will help&nbsp;us to&nbsp;make a&nbsp;tuned offer.
         .contacts__content 
           .contacts__photo 
-            img(src="../img/brands/face12.jpg", alt="contact photo")
+            img(src="img/brands/face12.jpg", alt="contact photo")
           .contacts__form 
             form#form-contacts.form-contacts(action='/' method='post') 
               .form-contacts__controls 
@@ -155,18 +155,18 @@ body
         .our-offices__social-links
           a.whatsapp(href='#')
             svg
-              use(xlink:href='../img/svg/sprite1.svg#icon-whatsapp')            
+              use(xlink:href='img/svg/sprite1.svg#icon-whatsapp')            
           a.messenger(href='#')
             svg
-              use(xlink:href='../img/svg/sprite1.svg#icon-messenger')            
+              use(xlink:href='img/svg/sprite1.svg#icon-messenger')            
           a.facebook(href='#')
             svg
-              use(xlink:href='../img/svg/sprite1.svg#icon-facebook')            
+              use(xlink:href='img/svg/sprite1.svg#icon-facebook')            
           a.twitter(href='#')
             svg
-              use(xlink:href='../img/svg/sprite1.svg#icon-twitter')            
+              use(xlink:href='img/svg/sprite1.svg#icon-twitter')            
           a.youtube(href='#')
             svg
-              use(xlink:href='../img/svg/sprite1.svg#icon-youtube')            
+              use(xlink:href='img/svg/sprite1.svg#icon-youtube')            
 
   include ./partion/footer

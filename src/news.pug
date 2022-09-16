@@ -3,11 +3,11 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='shortcut icon' type='image/png' href='img//title.png')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
-  link(rel='stylesheet' href='./css/sass/main.scss')
+  link(rel='stylesheet' href="css/style.css")
   title NEWS
 body
   include ./partion/header
@@ -52,7 +52,7 @@ body
             .news-page__block-news
                 .news-page__card-news 
                     a(href="more-news.pug") 
-                        img.news-page__img(src='../img/news/news-4.jpg' alt='news photo')
+                        img.news-page__img(src='img/news/news-4.jpg' alt='news photo')
                     .news__text    
                         h4.news__inner-title
                             a.news__link-post(href='more-news.pug')
@@ -64,14 +64,14 @@ body
                                 | June 24, 2020
                             a.news__link-comments(href='more-news.pug')
                                 svg.news__comments-icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-chat')
                                 span.news__qty-comments
                                     | 4 comments
                         p.news__paragraph
                             |Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...                    
                 .news-page__card-news 
                     a(href="more-news.pug") 
-                        img.news-page__img(src='../img/news/news-5.jpg' alt='news photo')
+                        img.news-page__img(src='img/news/news-5.jpg' alt='news photo')
                     .news__text    
                         h4.news__inner-title
                             a.news__link-post(href='more-news.pug')
@@ -83,14 +83,14 @@ body
                                 | June 12, 2020
                             a.news__link-comments(href='more-news.pug')
                                 svg.news__comments-icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-chat')
                                 span.news__qty-comments
                                     | No comments
                         p.news__paragraph
                             |Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat vitae scelerisque. Rhoncus augue faucibus maecenas lacus...                  
                 .news-page__card-news 
                     a(href="more-news.pug") 
-                        img.news-page__img(src='../img/news/news-6.jpg' alt='news photo')
+                        img.news-page__img(src='img/news/news-6.jpg' alt='news photo')
                     .news__text    
                         h4.news__inner-title
                             a.news__link-post(href='more-news.pug')
@@ -102,14 +102,14 @@ body
                                 | May 16, 2020
                             a.news__link-comments(href='more-news.pug')
                                 svg.news__comments-icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-chat')
                                 span.news__qty-comments
                                     | No comments
                         p.news__paragraph
                             |Cras est nisi purus velit facilisi vitae, dolor. Lorem scelerisque integer duis et nulla lobortis cursus. Viverra erat sollicitudin praesent viverra...                    
                 .news-page__card-news 
                     a(href="more-news.pug") 
-                        img.news-page__img(src='../img/news/news-7.jpg' alt='news photo')
+                        img.news-page__img(src='img/news/news-7.jpg' alt='news photo')
                     .news__text    
                         h4.news__inner-title
                             a.news__link-post(href='more-news.pug')
@@ -121,14 +121,14 @@ body
                                 | February 25, 2020
                             a.news__link-comments(href='more-news.pug')
                                 svg.news__comments-icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-chat')
                                 span.news__qty-comments
                                     | 1 comments
                         p.news__paragraph
                             |Tellus quis aliquet volutpat nunc pulvinar donec sed sapien. Vitae elit id dolor, tristique massa. Fames lobortis orci rutrum bibendum integer...                  
                 .news-page__card-news 
                     a(href="more-news.pug") 
-                        img.news-page__img(src='../img/news/news-8.jpg' alt='news photo')
+                        img.news-page__img(src='img/news/news-8.jpg' alt='news photo')
                     .news__text    
                         h4.news__inner-title
                             a.news__link-post(href='more-news.pug')
@@ -140,14 +140,14 @@ body
                                 | January 14, 2020
                             a.news__link-comments(href='more-news.pug')
                                 svg.news__comments-icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-chat')
                                 span.news__qty-comments
                                     | No comments
                         p.news__paragraph
                             |Dignissim sed enim, eleifend morbi condimentum. Congue id quis vulputate dignissim eget. Ac ullamcorper nunc habitasse enim interdum platea...                    
                 .news-page__card-news 
                     a(href="#") 
-                        img.news-page__img(src='../img/news/news-9.jpg' alt='news photo')
+                        img.news-page__img(src='img/news/news-9.jpg' alt='news photo')
                     .news__text    
                         h4.news__inner-title
                             a.news__link-post(href='more-news.pug')
@@ -159,7 +159,7 @@ body
                                 | December 1, 2019
                             a.news__link-comments(href='more-news.pug')
                                 svg.news__comments-icon
-                                    use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                                    use(xlink:href='img/svg/sprite1.svg#icon-chat')
                                 span.news__qty-comments
                                     | No comments
                         p.news__paragraph
@@ -183,7 +183,7 @@ body
                 li.news-page__item-pages
                     a.news-page__link-pages(href="#")
                         svg
-                            use(xlink:href='../img/svg/sprite1.svg#icon-arrow-right')
+                            use(xlink:href='img/svg/sprite1.svg#icon-arrow-right')
                 
     article.article-global-form
       .container

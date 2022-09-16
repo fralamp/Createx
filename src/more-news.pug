@@ -3,11 +3,11 @@ head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='shortcut icon' type='image/png' href='../img//title.png')
+  link(rel='shortcut icon' type='image/png' href='img//title.png')
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
-  link(rel='stylesheet' href='./css/sass/main.scss')
+  link(rel='stylesheet' href="css/style.css")
   title NEWS
 body
   include ./partion/header
@@ -31,26 +31,26 @@ body
                   span.news__type
                       | Industry News
                   .news__date-block  
-                      img(src="../img/svg/clock.svg", alt="clock icon")                    
+                      img(src="img/svg/clock.svg", alt="clock icon")                    
                       span
                           | June 24, 2020
                   a.news__link-comments(href='more-news.pug')
                       svg.news__comments-icon
-                          use(xlink:href='../img/svg/sprite1.svg#icon-chat')
+                          use(xlink:href='img/svg/sprite1.svg#icon-chat')
                       span.news__qty-comments
                           | 4 comments
               .more-news__social 
                   a.more-news__social-link(href="#" target="_blank") 
                       svg.more-news__icon
-                          use(xlink:href='../img/svg/sprite1.svg#icon-facebook')                    
+                          use(xlink:href='img/svg/sprite1.svg#icon-facebook')                    
                   a.more-news__social-link(href="#" target="_blank") 
                       svg.more-news__icon
-                          use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                          use(xlink:href='img/svg/sprite1.svg#icon-link')
                   a.more-news__social-link(href="#" target="_blank") 
                       svg.more-news__icon
-                          use(xlink:href='../img/svg/sprite1.svg#icon-twitter')
+                          use(xlink:href='img/svg/sprite1.svg#icon-twitter')
     article.more-news   
-        img.more-news__top-img(src="../img/news/news-10.jpg", alt="news photo")        
+        img.more-news__top-img(src="img/news/news-10.jpg", alt="news photo")        
         .more-news__container.mb-8
           h5.more-news__inner-title
             |Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod. 
@@ -60,26 +60,26 @@ body
 
               |Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus. In dictum nullam tincidunt semper pellentesque purus morbi sed. Ut aliquet velit pharetra, nisi nunc, non. 
           blockquote.more-news__blockquote
-            img(src="../img/svg/quote.svg", alt="qoute icon")
+            img(src="img/svg/quote.svg", alt="qoute icon")
             p 
               |Dapibus nec vitae ante mattis. Aliquam phasellus ac dui augue in. Sed aliquet in egestas hac at proin sed quam. Etiam aliquet sagittis non, massa cum pulvinar. Et in leo, tempus purus vestibulum ut blandit et mi. Odio massa purus vel praesent arcu enim elit felis viverra.
           p.more-news__text 
             |Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque amet non fringilla blandit:
           .constructive__text
               .constructive__inner-text
-                img(src='../img/svg/check2.svg' alt='icon check')
+                img(src='img/svg/check2.svg' alt='icon check')
                 span 
                   |A fermentum in morbi pretium aliquam adipiscing donec tempus.
               .constructive__inner-text 
-                img(src='../img/svg/check2.svg' alt='icon check')
+                img(src='img/svg/check2.svg' alt='icon check')
                 span 
                   |Vulputate placerat amet pulvinar lorem nisl.
               .constructive__inner-text
-                img(src='../img/svg/check2.svg' alt='icon check')
+                img(src='img/svg/check2.svg' alt='icon check')
                 span 
                   |Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
               .constructive__inner-text
-                img(src='../img/svg/check2.svg' alt='icon check')
+                img(src='img/svg/check2.svg' alt='icon check')
                 span 
                   |Etiam duis lobortis in fames ultrices commodo nibh.
           p.more-news__text  
@@ -89,13 +89,13 @@ body
               |Share:
             a.more-news__social-link(href="#" target="_blank") 
                 svg.more-news__icon
-                    use(xlink:href='../img/svg/sprite1.svg#icon-facebook')                    
+                    use(xlink:href='img/svg/sprite1.svg#icon-facebook')                    
             a.more-news__social-link(href="#" target="_blank") 
                 svg.more-news__icon
-                    use(xlink:href='../img/svg/sprite1.svg#icon-link')
+                    use(xlink:href='img/svg/sprite1.svg#icon-link')
             a.more-news__social-link(href="#" target="_blank") 
                 svg.more-news__icon
-                    use(xlink:href='../img/svg/sprite1.svg#icon-twitter')          
+                    use(xlink:href='img/svg/sprite1.svg#icon-twitter')          
         .more-news__container 
           .comments
             h2.comments__title 
@@ -111,7 +111,7 @@ body
                   a.comment__link-autor(href="#") 
                   |Phasellus varius faucibus ultrices odio in. Massa neque dictum natoque ornare rutrum malesuada et phasellus. Viverra natoque nulla cras vel nisl proin senectus. Tortor sed eleifend ante tristique felis sed urna aliquet. Suspendisse fames egestas sed duis purus diam et.
                 a.comments__reply(href="#") 
-                  img(src="../img/svg/reply.svg", alt="reply icon")
+                  img(src="img/svg/reply.svg", alt="reply icon")
                   span 
                     |Reply
             .comments__card 
@@ -126,7 +126,7 @@ body
                     |@Devon Lane
                   | Egestas fermentum natoque sollicitudin mauris. Facilisis praesent urna sed rhoncus quis pharetra pellentesque erat sagittis.
                 a.comments__reply(href="#") 
-                  img(src="../img/svg/reply.svg", alt="reply icon")
+                  img(src="img/svg/reply.svg", alt="reply icon")
                   span 
                     |Reply
             .comments__card 
@@ -140,7 +140,7 @@ body
                   a.comment__link-autor(href="#") 
                   |Libero commodo sit dui ac proin. Penatibus ultricies at adipiscing mauris nunc. Fames faucibus nisl duis id diam.
                 a.comments__reply(href="#") 
-                  img(src="../img/svg/reply.svg", alt="reply icon")
+                  img(src="img/svg/reply.svg", alt="reply icon")
                   span 
                     |Reply
             .comments__card.mb-12 
@@ -154,7 +154,7 @@ body
                   a.comment__link-autor(href="#") 
                   |Ullamcorper nibh sed ac ipsum nunc imperdiet rhoncus. Quam donec habitant nibh sit consequat erat libero, tincidunt. Eros ut aliquam proin et duis. Mauris, egestas congue nibh dui a nulla.
                 a.comments__reply(href="#") 
-                  img(src="../img/svg/reply.svg", alt="reply icon")
+                  img(src="img/svg/reply.svg", alt="reply icon")
                   span 
                     |Reply
             h2.comments__title 

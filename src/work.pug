@@ -1,0 +1,293 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' type='image/png' href='img//title.png')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Ubuntu:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href="css/style.css")
+  title WORK
+body
+  include ./partion/header
+  main.main
+    section.section-work
+        .work
+            .container
+                ul.breadcrumbs
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="index.pug") 
+                            |Homepage
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="work.pug") 
+                            |Work
+                h1.work__title
+                    |OUR WORK
+                p.work__subtitle
+                    |Our portfolio represents 20&nbsp;years of&nbsp;construction experience backed by&nbsp;a&nbsp;passion for perfect client service, quality and innovations in&nbsp;consctuction industry.
+            .work__preview-block
+                a(href="#").work__preview
+                    svg
+                        use(xlink:href='img/svg/sprite5.svg#icon-all-project')
+                    span
+                        |All Projects
+                a(href="#").work__preview
+                    svg
+                        use(xlink:href='img/svg/sprite3.svg#icon-construction')
+                    span
+                        |Construction
+                a(href="#").work__preview
+                    svg
+                        use(xlink:href='img/svg/sprite4.svg#icon-project')
+                    span
+                        |Project Development
+                a(href="#").work__preview
+                    svg
+                        use(xlink:href='img/svg/sprite5.svg#icon-design')
+                    span
+                        |Interior Design
+                a(href="#").work__preview
+                    svg
+                        use(xlink:href='img/svg/sprite3.svg#icon-repairs')
+                    span
+                        |Repairs
+        article.cards
+            .card
+                img.card__img(src='img/project/project2.jpg' alt='photo Cubes Building')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Cubes Building
+                    span.card__type-project
+                        | Business Centers
+                .card__text--invisible
+                    span.card__name-project
+                        | Cubes Building
+                    span.card__type-project
+                        | Business Centers
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card
+                img.card__img(src='img/project/project4.jpg' alt='photo Modern Cottage')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Modern Cottage
+                    span.card__type-project
+                        | Private houses
+                .card__text--invisible
+                    span.card__name-project
+                        | Modern Cottage
+                    span.card__type-project
+                        | Private houses
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card
+                img.card__img(src='img/project/project5.jpg' alt='photo Modern Cottage')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Luxury Beach House
+                    span.card__type-project
+                        | Private houses
+                .card__text--invisible
+                    span.card__name-project
+                        | Luxury Beach House
+                    span.card__type-project
+                        | Private houses
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card
+                img.card__img(src='img/more-services/more-services-3.jpg' alt='photo Modern Double Bedroom')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Modern Double Bedroom
+                    span.card__type-project
+                        | Apartments &amp;&nbsp;flats
+                .card__text--invisible
+                    span.card__name-project
+                        | Modern Double Bedroom
+                    span.card__type-project
+                        | Apartments &amp;&nbsp;flats
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card
+                img.card__img(src='img/more-services/more-services-2.jpg' alt='photo Kids Bedroom With Decorations')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Kids Bedroom With Decorations
+                    span.card__type-project
+                        | Private houses
+                .card__text--invisible
+                    span.card__name-project
+                        | Kids Bedroom With Decorations
+                    span.card__type-project
+                        | Private houses
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card
+                img.card__img(src='img/project/project3.jpg' alt='photo The Pencil Building')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | The Pencil Building
+                    span.card__type-project
+                        | Stores &amp;&nbsp;Malls
+                .card__text--invisible
+                    span.card__name-project
+                        | The Pencil Building
+                    span.card__type-project
+                        | Stores &amp;&nbsp;Malls
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card
+                img.card__img(src='img/project/project1.jpg' alt='photo Red Finger Building')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Red Finger Building
+                    span.card__type-project
+                        | Business Centers
+                .card__text--invisible
+                    span.card__name-project
+                        | Red Finger Building
+                    span.card__type-project
+                        | Business Centers
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card
+                img.card__img(src='img/more-services/more-services-4.jpg' alt='photo Scandinavian Style Interior')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Scandinavian Style Interior
+                    span.card__type-project
+                        | Private houses
+                .card__text--invisible
+                    span.card__name-project
+                        | Scandinavian Style Interior
+                    span.card__type-project
+                        | Private houses
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card
+                img.card__img(src='img/project/project6.jpg' alt='photo Brown and Gray Painted House')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Brown and Gray Painted House
+                    span.card__type-project
+                        | Private houses
+                .card__text--invisible
+                    span.card__name-project
+                        | Brown and Gray Painted House
+                    span.card__type-project
+                        | Private houses
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card.no-show-card
+                img.card__img(src='img/project/project2.jpg' alt='photo Cubes Building')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Cubes Building
+                    span.card__type-project
+                        | Business Centers
+                .card__text--invisible
+                    span.card__name-project
+                        | Cubes Building
+                    span.card__type-project
+                        | Business Centers
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card.no-show-card
+                img.card__img(src='img/project/project4.jpg' alt='photo Modern Cottage')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Modern Cottage
+                    span.card__type-project
+                        | Private houses
+                .card__text--invisible
+                    span.card__name-project
+                        | Modern Cottage
+                    span.card__type-project
+                        | Private houses
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+            .card.no-show-card
+                img.card__img(src='img/project/project5.jpg' alt='photo Modern Cottage')
+                a.card__text(href="more-works.pug") 
+                    span.card__name-project
+                        | Luxury Beach House
+                    span.card__type-project
+                        | Private houses
+                .card__text--invisible
+                    span.card__name-project
+                        | Luxury Beach House
+                    span.card__type-project
+                        | Private houses
+                    a.btn-link.btn-link--project(href='more-works.pug')
+                        | View Project
+        button.load-more(type='button' name='load-more')
+            img.load-more__img(src='img/svg/refresh.svg' alt='refresh icon')
+            span.load-more__text 
+                |Load more
+        article.work-supported
+            .supported
+                .supported__content
+                    h3.supported__inner-title
+                        | What our clients are saying
+                    .supported__feedback
+                        img.supported__user-icon(src='img/brands/face.jpg' alt='user photo')
+                        p.supported__user-text
+                            | Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco.
+                        span.supported__user-name
+                            | Shawn Edwards
+                        .supported__inner-info
+                            span
+                                | Position, Company name
+                            button.arrow.arrow--project(href='#')
+                                svg.arrow__pic
+                                    use(xlink:href='img/svg/sprite1.svg#icon-arrow-left')                  
+                            button.arrow.arrow--project(href='#')
+                                svg.arrow__pic
+                                    use(xlink:href='img/svg/sprite1.svg#icon-arrow-right')                      
+                img.supported__photo(src='img/brands/face2.jpg' alt='photo happy clients')
+        .work__container
+            h2.supported__title
+                | Our clients
+            .work__partner
+                .work__inner-block
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='img/brands/brand-1.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='img/brands/brand-2.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='img//brands/brand-3.png' alt='icon partners')
+                .work__inner-block                        
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='img/brands/brand-4.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='img/brands/brand-5.png' alt='icon partners')
+                    a.supported__link-partner(href='#')
+                        img.supported__img-partner(src='img/brands/brand-6.png' alt='icon partners')
+           
+
+    article.article-global-form
+      .container
+        .content.content--form
+          form#global-form.form-global(action='#' method='post' name='form-global')
+            h3.form-global__title
+              | A quick way to discuss details
+            label.form-global__label(for='name')
+              | Name*
+              input.form-global__input(type='text' name='name' placeholder='Your name' required='')
+            label.form-global__label(for='telephone')
+              | Phone*
+              input.form-global__input(type='tel' name='telephone' placeholder='Your phone number' required='')
+            label.form-global__label(for='email')
+              | Email
+              input.form-global__input(type='email' name='email' placeholder='Your working email')
+            label.form-global__label(for='email')
+              | Message*
+              input.form-global__input(type='text' name='Message' placeholder='Your message' required='')
+            .form-global__block-agreement
+              input#checkbox-inf.form-global__checkbox(type='checkbox' required='')
+              label.form-global__label.form-global__label--checkbox(for='checkbox-inf')
+                | I agree to receive communications from Createx Construction Bureau.
+            button.form-global__btn(type='submit' form='global-form')
+              | send request
+  include ./partion/footer
